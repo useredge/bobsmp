@@ -1,0 +1,64 @@
+.footer {
+    padding: 1em;
+    font-family: ProximaNovaBold, sans-serif;
+    z-index: 20;
+    width: 100%;
+    background-color: #FFAE00;
+}
+
+.flex {
+    color: #533500;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footerButton {
+    cursor: pointer;
+    display: flex;
+    justify-self: left;
+    align-items: center;
+    transition-duration: 0.5s;
+}
+
+.fIp {
+    color: orange;
+    padding: 0.6em;
+    background-color: black;
+}
+
+.fComing {
+    color: yellow;
+    padding: 0.6em;
+    background-color: black;
+}
+
+.socials {
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-self: right;
+    font-size: 1.5em;
+}
+
+.socials i {
+    padding: 20px;
+}
+
+.socials a {
+    color: #533500;
+}
+
+.socials a:visited {
+    color: #533500;
+}
+
+.socials i:hover {
+    color: #8a5a03;
+}
+
+.footerButton:hover {
+    color: #704802;
+    transition-duration: 0.5s;
+}

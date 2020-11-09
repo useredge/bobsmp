@@ -1,0 +1,72 @@
+.ipButton {
+    color: #3b2409;
+    cursor: pointer;
+    margin-top: 2.5%;
+    font-family: ProximaNovaBold, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    transition-duration: 0.3s;
+    z-index: 10;
+}
+
+.ipButton:hover {
+    transition-duration: 0.3s;
+    opacity: 0.7;
+}
+
+.ip {
+    outline: 1px solid #ffb86f;
+    border-bottom: 5px solid #AD7600;
+    padding: 20px;
+    text-align: center;
+    background-color: #FFAE00;
+    font-size: 16px;
+}
+
+.swap {
+    margin-top: 10%;
+    font-family: ProximaNovaBold, sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 16px;
+}
+
+.buttonsContainer{ 
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.discordButton {
+    margin-top: 2.5%;
+    font-family: ProximaNovaBold, sans-serif;
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.discord {
+    padding: 20px;
+    background-color: #7289da;
+}
+
+.outline {
+    border-bottom: 5px solid #576fc7;
+    outline: 1px solid powderblue;
+}
+
+.join {
+    margin-top: 10%;
+    color: white;
+    font-size: 16px;
+}
+
+.discordButton:hover {
+    transition-duration: 0.3s;
+    opacity: 0.7;
+}

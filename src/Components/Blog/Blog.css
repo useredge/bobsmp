@@ -1,0 +1,12 @@
+.blogGridContainer {
+    font-family: ProximaNovaBold, sans-serif;
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    justify-self: center;
+    flex-wrap: wrap;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+}

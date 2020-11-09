@@ -1,0 +1,20 @@
+@font-face {
+    font-family: 'ProximaNova';
+    src:local('ProximaNova'), url("./font/ProximaNovaRegular.otf") format('woff');
+}
+@font-face {
+    font-family: 'ProximaNovaBold';
+    src:local('ProximaNovaBold'), url("./font/ProximaNovaBold.otf") format('woff');
+}
+@font-face {
+    font-family: 'ProximaNovaLight';
+    src:local('ProximaNovaLight'), url("./font/ProximaNovaThin.otf") format('woff');
+}
+
+::-webkit-scrollbar {
+    display: none;
+  } 
+
+* {
+    -ms-overflow-style: none;
+}
