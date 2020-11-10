@@ -19,11 +19,12 @@
 
 .ip {
     outline: 1px solid #ffb86f;
-    border-bottom: 5px solid #AD7600;
+    border-bottom: 5px solid #BB6C00;
     padding: 20px;
     text-align: center;
-    background-color: #FFAE00;
+    background-color: #FF9300;
     font-size: 16px;
+    color:white;
 }
 
 .swap {

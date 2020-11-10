@@ -19,9 +19,8 @@ const variants = {
       opacity: 0,
       transition: {
         when: "afterChildren",
-        duration: 0.5,
+        duration: 0.25,
         delayChildren: 2,
-        delay: 0.2
       },
     },
   }
@@ -43,7 +42,7 @@ const Shop = () => {
               >
                   <div className="iframeContainer">
                     <div className="gradientTop"/>
-                    <iframe title="Shop" className="frame" src="https://bobssmp.store"/>
+                    <iframe title="Shop" className="frame" src="https://buy.bobssmp.store"/>
                     <div className="gradientBottom"/>
                   </div>
                 </motion.div>

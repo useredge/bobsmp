@@ -70,7 +70,7 @@ const BlogPage = () => {
           transition: {
             when: "afterChildren",
             delayChildren: 2,
-            duration: 0.5,
+            duration: 0.25,
           },
         },
       }
@@ -95,7 +95,7 @@ const BlogPage = () => {
                         <h3>{formattedDate.slice(4)}</h3> 
                     </div>
                 </div>
-                    <ReactMarkdown allowDangerousHtml={true}>
+                    <ReactMarkdown allowDangerousHtml={true} className="articleContent">
                       {article.content}
                     </ReactMarkdown>
                 </div>

@@ -43,7 +43,7 @@ const Blog = () => {
       transition: {
         when: "afterChildren",
         delayChildren: 2,
-        duration: 0.5,
+        duration: 0.25,
       },
     },
   }

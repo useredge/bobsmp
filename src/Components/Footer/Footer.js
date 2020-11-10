@@ -1,10 +1,13 @@
 import React, {useState} from "react";
 import {CopyToClipboard} from "react-copy-to-clipboard";
+import TextTransition from 'react-text-transition'
+import { AnimateOnChange } from 'react-animation'
 import './Footer.css'
 
 const Footer = () => {
 
     const [value, setValue] = useState("BOBSSMP.COM");
+    const [title, setTitle] = useState("");
 
     return (
         <div className="footer">
@@ -18,14 +21,26 @@ const Footer = () => {
                        } />
 
                     <CopyToClipboard text={value}>
-
-                        <div className="footerButton">
-                        <div className="fIp">
-                            <h2>BOBSSMP.COM</h2>
-                        </div>
-                        <div className="fComing">
-                            <h2>COMING SOON</h2>
-                        </div>
+                        <div className="footerButton" onClick={() => {
+                            setTitle("COPIED TO CLIPBOARD")
+                            setTimeout(() => setTitle(""), 5000)
+                            }}>
+                            <div className="fIp">
+                                <h2>BOBSSMP.COM</h2>
+                            </div>
+                            <div className="fComing">
+                                <h2>COMING SOON</h2>
+                            </div>
+                            <AnimateOnChange
+                                animationIn="fadeIn"
+                                animationOut="fadeOut"
+                                durationOut={200}
+                                >
+                                    <div className="copy">
+                                        {title}
+                                    </div>   
+                            </AnimateOnChange>
+                                
                         </div>
                     </CopyToClipboard>
                 </div>

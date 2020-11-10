@@ -26,7 +26,7 @@ const Buttons = () => {
                     setTimeout(() => setTitle("CLICK TO COPY"), 5000)
                 }}>
                     <div className="ip">
-                        <h2>BOBSSMP.COM</h2>
+                        <h2><i class="fas fa-external-link-square-alt"/> BOBSSMP.COM</h2>
                     </div>
                     <TextTransition text={title} className="swap" direction="down">
                     </TextTransition>

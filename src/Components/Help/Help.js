@@ -19,9 +19,8 @@ const variants = {
       opacity: 0,
       transition: {
         when: "afterChildren",
-        duration: 0.5,
+        duration: 0.25,
         staggerChildren: 2,
-        delay: 0.2
       },
     },
   }

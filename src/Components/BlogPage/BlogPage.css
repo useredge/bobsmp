@@ -58,7 +58,7 @@
 }
 
 .articleTitle {
-    padding: 5% 5% 0% 0%;
+    margin-top: 5vh;
     color: white;
     font-size: 2rem;
 }
@@ -83,5 +83,14 @@
 .articleHeader {
     display: flex;
     flex-direction: column;
-    margin-bottom: 5%;
+}
+
+.articleTitle {
+    font-family: ProximaNovaBold, sans-serif;
+}
+
+.articleContent {
+    font-family: ProximaNova, sans-serif;
+    color: lightgray;
+    margin-top: 5vh;
 }
