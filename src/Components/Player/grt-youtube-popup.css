@@ -10,7 +10,7 @@
 .grtyoutube-popup-content {
 	margin-top:150px;
 	width:95%;
-	max-width:850px;
+	max-width:1366px;
 	margin-left:auto;
 	margin-right:auto;
 	position:relative;
@@ -22,14 +22,12 @@
 	left:0;
 	color:#FFF;
 	font-size:25px;
-	width:17px;
-	height:17px;
 	cursor:pointer;
 }
 
 .grtyoutube-iframe {
 	width:100%;
-	height:480px;
+	height:768px;
 }
 @media (max-width:767px) {
 	.grtyoutube-iframe {
@@ -49,7 +47,7 @@
 }
 
 .grtyoutube-dark-theme .grtyoutube-popup-close {
-	background: url('backspace_white_18x18.png') no-repeat;
+	background: url('') no-repeat;
 	width: 300px;
 }
 
@@ -68,7 +66,7 @@
 }
 
 .space {
-	margin-left: 30px;
+	margin-left: 10px;
 	color: white;
-	font-family: ProximaNova, sans-serif;
+	font-family: ProximaNovaBold, sans-serif;
 }

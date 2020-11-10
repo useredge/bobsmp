@@ -1,6 +1,6 @@
 .blogPost {
     margin-top: 3%;
-    width: 50%;
+    width: 10%;
     justify-self: center;
     display: flex;
     flex-direction: column;
@@ -13,7 +13,7 @@
 }
 
 .blogPostThumbnail {
-    align-self: center;;
+    align-self: center;
     width: 50rem;
     height: auto;
     outline: 1px solid white;

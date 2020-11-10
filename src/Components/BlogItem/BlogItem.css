@@ -1,6 +1,6 @@
 .blogItemContainer {
     margin-top: 5%;
-    width: 45rem;
+    width: 30vw;
     color:white;
     font-family: ProximaNovaBold, sans-serif;
     display: flex;
@@ -10,7 +10,7 @@
 }
 
 .blogItemThumbnail {
-    width: 45rem;
+    width: 30vw;    
     height: auto;
     outline: 1px solid white;
     transition: ease-in-out 0.2s;
