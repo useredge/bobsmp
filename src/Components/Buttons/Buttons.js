@@ -6,7 +6,7 @@ import { nodeName } from "jquery";
 
 const Buttons = () => {
 
-    const [value, setValue] = useState("BOBSMP.COM");
+    const [value, setValue] = useState("BOBSSMP.COM");
     const [title, setTitle] = useState("CLICK TO COPY");
 
     return(
@@ -26,7 +26,7 @@ const Buttons = () => {
                     setTimeout(() => setTitle("CLICK TO COPY"), 5000)
                 }}>
                     <div className="ip">
-                        <h2>BOBSMP.COM</h2>
+                        <h2>BOBSSMP.COM</h2>
                     </div>
                     <TextTransition text={title} className="swap" direction="down">
                     </TextTransition>

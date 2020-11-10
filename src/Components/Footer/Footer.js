@@ -4,7 +4,7 @@ import './Footer.css'
 
 const Footer = () => {
 
-    const [value, setValue] = useState("BOBSMP.COM");
+    const [value, setValue] = useState("BOBSSMP.COM");
 
     return (
         <div className="footer">
@@ -21,7 +21,7 @@ const Footer = () => {
 
                         <div className="footerButton">
                         <div className="fIp">
-                            <h2>BOBSMP.COM</h2>
+                            <h2>BOBSSMP.COM</h2>
                         </div>
                         <div className="fComing">
                             <h2>COMING SOON</h2>
