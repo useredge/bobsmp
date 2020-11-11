@@ -30,14 +30,14 @@ const Navbar = () => {
     }
 
     return (
-        <div>
+        <div className="navContainer">
             <nav>
                 <ul className="nav-links">
                     <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>
                         <li className={blue}>HOME <i class="fas fa-home"/></li>
                     </Link>
                     <Link to='/blog' style={{ textDecoration: 'none', color: 'white' }}>
-                        <li className={purple}>BLOG <i class="fas fa-pencil-alt"/></li>
+                        <li className={purple}>NEWS <i class="fas fa-newspaper"/></li>
                     </Link>
                     <Link to='/help' style={{ textDecoration: 'none', color: 'white' }}>
                         <li className={green}>HELP <i class="fas fa-question"/></li>

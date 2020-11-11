@@ -151,7 +151,7 @@ const Members = [
         role: "Sounds Team",
         image: "/images/skins/vlusk.png",
         icon: "/images/icons/Vlusky.png",
-        description: "Heyo. I'm Vlusky (to avoid confusion, it's pronounced like \"Husky\". And I'm a music artist that also draws stuff. I worked on the soundtrack and sound effects for this project. It's nice to have my work on here! I'm so glad that I got the opportunity to work on BOBSMP. It's an experience to say the least... This is my first major project that I worked on so I hope you guys enjoy it!"
+        description: "Heyo. I'm Vlusky (to avoid confusion, it's pronounced like \"Husky\"). And I'm a music artist that also draws stuff. I worked on the soundtrack and sound effects for this project. It's nice to have my work on here! I'm so glad that I got the opportunity to work on BOBSMP. It's an experience to say the least... This is my first major project that I worked on so I hope you guys enjoy it!"
     },
     {
         value: 17,

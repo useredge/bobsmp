@@ -4,7 +4,9 @@
     text-decoration: none;
     cursor: pointer;
     text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
-    transition: all 0.1s;
+    transition: all 0.15s;
+    outline-offset: -1px;
+    outline: 1px solid rgba(0, 0, 0, 0);
 }
 
 .permablue {
@@ -57,21 +59,34 @@
 
 nav {
     font-family: ProximaNovaBold, sans-serif;
-    font-size: 1.5rem;
+    width: 50vw;
+    font-size: 1.3em;
     font-weight: bold;
     letter-spacing: 2px;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     height: 10vh;
     color: white;
     z-index: 1;
 }
 
+.navContainer {
+    display: flex;
+    justify-content: center;
+}
+
 ul {
     margin-top: 4%;
-    width: 45%;
     display: flex;
     justify-content: space-around;
     list-style-type: none;
+}
+
+@media only screen and (max-width: 768px) {
+
+.nav {
+
+}
+
 }
