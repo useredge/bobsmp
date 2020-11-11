@@ -1,6 +1,6 @@
 .blogPost {
     margin-top: 3%;
-    width: 10%;
+    width: 50vw;
     justify-self: center;
     display: flex;
     flex-direction: column;
