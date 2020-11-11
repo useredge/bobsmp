@@ -51,7 +51,7 @@ const Members = [
         role: "Visual Effects Team",
         image: "/images/skins/colon.png",
         icon: "/images/icons/Colon.png",
-        description: "Hey all, I'm Craig (aka Colon and I'm really into programming and making dumb videos. I put together visualizers for a couple of the custom-made tracks and am really blown away by how well the SMP is coming together. The amount of dedication and teamwork going into this project is unreal and I love seeing everyone get together for this sweet passion project."
+        description: "Hey all, I'm Craig (aka Colon) and I'm really into programming and making dumb videos. I put together visualizers for a couple of the custom-made tracks and am really blown away by how well the SMP is coming together. The amount of dedication and teamwork going into this project is unreal and I love seeing everyone get together for this sweet passion project."
     },
     {
         value: 6,

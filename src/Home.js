@@ -40,9 +40,7 @@ const Home = () => {
       >
           <Header link="/images/bareboneBg.png"/>
           <Navbar/>
-          <div className="centerer">
-              <Logo/>
-          </div>
+          <Logo/>
           <Buttons/>
           <Player/>
           <Team />

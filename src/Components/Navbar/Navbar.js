@@ -1,8 +1,10 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from 'react-router-dom'
 import './Navbar.css';
 
 const Navbar = () => {
+
+    const [visible, setVisible] = useState(false)
 
     let blue = "blue";
     let purple = "purple";
@@ -30,7 +32,9 @@ const Navbar = () => {
     }
 
     return (
-        <div className="navContainer">
+        <div>
+        <i className="fas fa-bars hamburger" onClick={() => {setVisible(!visible)}}/>
+        <div className={visible ? "navContainer visible" : "navContainer hidden"}>
             <nav>
                 <ul className="nav-links">
                     <Link to='/' style={{ textDecoration: 'none', color: 'white' }}>
@@ -47,6 +51,7 @@ const Navbar = () => {
                     </Link>
                 </ul>
             </nav>
+        </div>
         </div>
     )
 }

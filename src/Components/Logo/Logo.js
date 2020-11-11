@@ -3,7 +3,9 @@ import './Logo.css'
 
 const Logo = () => {
     return(
-        <img className="logo" src="/images/bobSmpSeason2.png" alt="Logo"/>
+        <div className="logoContainer">
+            <img className="logo" src="/images/bobSmpSeason2.png" alt="Logo"/>
+        </div>
     )
 }
 

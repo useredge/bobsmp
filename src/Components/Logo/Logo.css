@@ -1,5 +1,30 @@
 .logo {
     margin-top: 5%;
-    width: 30%;
-    height: 30%;
+    width: 30vw;
+    height: auto;
+}
+
+.logoContainer {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+
+.logo {
+    width: 90vw;
+    height: auto;
+}
+
+.logoContainer {
+    width: 100vw;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 }
