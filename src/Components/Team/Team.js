@@ -3,7 +3,6 @@ import './Team.css'
 import Members from "./Members";
 import { AnimateOnChange } from 'react-animation'
 import { HideUntilLoaded } from 'react-animation'
-import { render } from "react-dom";
 
 const Team = () => {
 
@@ -29,7 +28,7 @@ const Team = () => {
 
     return (
 
-        <div>
+        <div className="teamComponent">
             <div className="titleWrapper">
                 <h1 className="meet">Meet the Team!</h1>
                 <p className="subtitle">These are the volunteers who helped make this possible!</p>
