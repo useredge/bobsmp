@@ -35,3 +35,25 @@
 .blogItemContainer:hover {
     transition: all 0.2s;
 }
+
+@media only screen and (max-width: 768px) {
+
+.blogItemContainer {
+    margin-top: 5%;
+    width: 90vw;
+    color:white;
+    font-family: ProximaNovaBold, sans-serif;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.2s;
+    line-height: 150%;
+}
+
+.blogItemThumbnail {
+    width: 90vw;    
+    height: auto;
+    outline: 1px solid white;
+    transition: ease-in-out 0.2s;
+}
+
+}

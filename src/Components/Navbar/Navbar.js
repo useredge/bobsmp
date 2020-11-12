@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import { Link } from 'react-router-dom'
+import { AnimateOnChange } from 'react-animation'
 import './Navbar.css';
 
 const Navbar = () => {
@@ -33,7 +34,14 @@ const Navbar = () => {
 
     return (
         <div>
-        <i className="fas fa-bars hamburger" onClick={() => {setVisible(!visible)}}/>
+            <AnimateOnChange
+                className="hamburger"
+                animationIn="fadeIn"
+                animationOut="fadeOut">
+
+                    <i className={visible? "fas fa-times" : "fas fa-bars"} onClick={() => {setVisible(!visible)}}/>
+
+            </AnimateOnChange>
         <div className={visible ? "navContainer visible" : "navContainer hidden"}>
             <nav>
                 <ul className="nav-links">

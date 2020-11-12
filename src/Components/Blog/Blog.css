@@ -10,3 +10,22 @@
     margin-right: auto;
     margin-bottom: 5%;
 }
+
+@media only screen and (max-width: 768px) {
+
+.blogGridContainer {
+    transform: translateY(-25vh);
+    font-family: ProximaNovaBold, sans-serif;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    flex-wrap: wrap;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+}

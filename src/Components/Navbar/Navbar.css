@@ -102,6 +102,7 @@ ul {
     display: block;
     align-self: flex-start;
     cursor: pointer;
+    z-index: 101;
 }
 
 .nav-links li {
@@ -128,7 +129,8 @@ nav {
 }
 
 .navContainer {
-    box-shadow: 0px 0px 40px 50px rgba(0,0,0,0.75);
+    z-index: 100;
+    box-shadow: 0px 0px 40px 50px rgba(0,0,0,0.85);
     position: relative;
     float: left;
     margin: 0;
@@ -137,7 +139,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 0.85);
 }
 
 ul {

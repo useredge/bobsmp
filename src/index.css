@@ -7,7 +7,7 @@
     src:local('ProximaNovaBold'), url("./font/ProximaNovaBold.otf") format('woff');
 }
 
-::-webkit-scrollbar {
+::-webkit-scrollbar {   
     display: none;
   } 
 
