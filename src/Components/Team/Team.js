@@ -35,7 +35,7 @@ const Team = () => {
             </div>
                 <div className="centerer" style={{backgroundColor: '#0d0e0f'}}>
                     <div className="select">
-                        <i class="fas fa-arrow-left arrows icon" onClick={() => {
+                        <i class="fas fa-arrow-left arrowsDesktop icon" onClick={() => {
                             if(which === 0) {
                                 setWhich(Members.length - 1)
                             }
@@ -45,8 +45,10 @@ const Team = () => {
                             }
                         }
                             }/>
-                        {renderList}
-                        <i class="fas fa-arrow-right arrows icon" onClick={() => {
+
+                            {renderList}
+
+                        <i class="fas fa-arrow-right arrowsDesktop icon" onClick={() => {
                             if(which === Members.length - 1) {
                                 setWhich(0)
                             }
@@ -54,7 +56,7 @@ const Team = () => {
                             {
                                 setWhich(which + 1)
                             }
-                        }}/>
+                            }}/>
                     </div>
                 </div>
 
@@ -79,9 +81,30 @@ const Team = () => {
                                 <HideUntilLoaded
                                 imageToLoad={Members[which].image}
                                 >
-                            <img src={Members[which].image} alt="Skin" className="skin"/>
+                                    <img src={Members[which].image} alt="Skin" className="skin"/>
                                 </HideUntilLoaded>
                             </AnimateOnChange>
+                            <div className="mobileArrows">
+                        <i class="fas fa-arrow-left arrowsMobile icon" style={{marginLeft: '3vw'}} onClick={() => {
+                            if(which === 0) {
+                                setWhich(Members.length - 1)
+                            }
+                            else
+                            {
+                                setWhich(which - 1)
+                            }
+                        }
+                            }/>
+                        <i class="fas fa-arrow-right arrowsMobile icon" onClick={() => {
+                            if(which === Members.length - 1) {
+                                setWhich(0)
+                            }
+                            else
+                            {
+                                setWhich(which + 1)
+                            }
+                            }}/>
+                </div>
                     </div>
                 </div>
             </div>

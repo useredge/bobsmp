@@ -1,6 +1,7 @@
 import React, {useState} from "react";
 import './Buttons.css'
 import {CopyToClipboard} from "react-copy-to-clipboard";
+import { AnimateOnChange } from 'react-animation'
 import TextTransition, { presets } from "react-text-transition";
 import { nodeName } from "jquery";
 
@@ -28,8 +29,13 @@ const Buttons = () => {
                     <div className="ip">
                         <h2><i class="fas fa-external-link-square-alt"/> BOBSSMP.COM</h2>
                     </div>
-                    <TextTransition text={title} className="swap" direction="down">
-                    </TextTransition>
+                    <AnimateOnChange
+                        className="swap"
+                        animationIn="fadeIn"
+                        animationOut="fadeOut"
+                        durationOut={1000}>
+                        {title}
+                    </AnimateOnChange>
                 </div>
             </CopyToClipboard>
 

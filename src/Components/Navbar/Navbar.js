@@ -47,7 +47,7 @@ const Navbar = () => {
                         <li className={green}>HELP <i class="fas fa-question"/></li>
                     </Link>
                     <Link to='/shop' style={{ textDecoration: 'none', color: 'white' }}>
-                        <li className="shop">SHOP <i class="fas fa-shopping-cart"/></li>
+                        <div className="shop"><li>SHOP <i class="fas fa-shopping-cart"/></li></div>
                     </Link>
                 </ul>
             </nav>
