@@ -95,7 +95,7 @@ const Team = () => {
                             }
                         }
                             }/>
-                        <i class="fas fa-arrow-right arrowsMobile icon" onClick={() => {
+                        <i class="fas fa-arrow-right arrowsMobile icon" style={{marginRight: '3vw'}} onClick={() => {
                             if(which === Members.length - 1) {
                                 setWhich(0)
                             }

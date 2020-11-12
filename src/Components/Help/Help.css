@@ -25,3 +25,30 @@
     color:white;
     font-family: ProximaNova, sans-serif;
 }
+
+@media only screen and (max-width: 1080px) {
+
+.helpContainer {
+    transform: translateY(-30vh);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.helpThumbnail {
+    width: 90vw;
+    height: auto;
+}
+
+.helpTitle {
+    text-align: center;
+    text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
+    padding: 5px;
+    background-color: rgb(255, 153, 0);
+    font-family: ProximaNovaBold, sans-serif;
+    color: white;
+    font-size: 20px;
+}
+
+}
