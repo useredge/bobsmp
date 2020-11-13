@@ -54,7 +54,7 @@ const Navbar = () => {
                     <Link to='/help' style={{ textDecoration: 'none', color: 'white' }}>
                         <li className={green}>HELP <i class="fas fa-question"/></li>
                     </Link>
-                    <a href="https://shop.bobssmp.com/" rel="noreferrer" target="_blank" style={{ textDecoration: 'none', color: 'white' }}>
+                    <a href="https://shop.bobssmp.com/" style={{ textDecoration: 'none', color: 'white' }}>
                         <div className="shop"><li>SHOP <i class="fas fa-shopping-cart"/></li></div>
                     </a>
                 </ul>

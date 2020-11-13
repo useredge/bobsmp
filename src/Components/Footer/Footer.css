@@ -80,6 +80,7 @@
     z-index: 20;
     width: 100vw;
     background-color: #FF8F00;
+    min-height: 10vw;
 }
 
 .footerButton {

@@ -156,7 +156,6 @@
     width: 100vw;
     height: auto;
     min-height: 0;
-    margin-bottom: 10vh;
     z-index: 11;
 }
 
@@ -170,12 +169,11 @@
 }
 
 .teamText {
-    width: 100vw;
-    height: 40vh;
+    width: 100%;
+    height: 50vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: start;
     padding: 0;
 }
 
