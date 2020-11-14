@@ -42,7 +42,7 @@ const Buttons = () => {
 
                 <div className="discordButton">
                     <div className="outline">
-                        <a style={{textDecoration: 'none', color: 'white'}}rel="noreferrer" target="_blank" href="https://discord.gg/Vk7zQ7V"><h2 className="discord"><i className="fab fa-discord"></i> OUR DISCORD</h2></a>
+                        <a style={{textDecoration: 'none', color: 'white'}} rel="noreferrer" target="_blank" href="https://discord.gg/Vk7zQ7V"><h2 className="discord"><i className="fab fa-discord"></i> OUR DISCORD</h2></a>
                     </div>
                     <h2 className="join">JOIN OUR DISCORD SERVER!</h2>
                 </div>

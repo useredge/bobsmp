@@ -1,7 +1,6 @@
 .ipButton {
     color: #3b2409;
     cursor: pointer;
-    margin-top: 2.5%;
     font-family: ProximaNovaBold, sans-serif;
     display: flex;
     flex-direction: column;
@@ -37,6 +36,7 @@
 }
 
 .buttonsContainer{ 
+    margin-top: 3%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -84,7 +84,6 @@
 }
     
 .discordButton {
-    margin-top: 9px;
     font-size: 10px;
     font-family: ProximaNovaBold, sans-serif;
     display: flex;
