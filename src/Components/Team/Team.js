@@ -64,7 +64,7 @@ const Team = () => {
                             {renderList.slice(0, 10)}
                         </div>
                         <div className="row2">
-                            {renderList.slice(10, renderList.length-1)}
+                            {renderList.slice(10, renderList.length)}
                         </div>
                     </div>
                 </div>
