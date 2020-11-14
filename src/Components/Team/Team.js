@@ -34,7 +34,7 @@ const Team = () => {
                 <p className="subtitle">These are the volunteers who helped make this possible!</p>
             </div>
                 <div className="centerer" style={{backgroundColor: '#0d0e0f'}}>
-                    <div className="select">
+                    <div className="selectDesktop">
                         <i class="fas fa-arrow-left arrowsDesktop icon" onClick={() => {
                             if(which === 0) {
                                 setWhich(Members.length - 1)
@@ -57,6 +57,15 @@ const Team = () => {
                                 setWhich(which + 1)
                             }
                             }}/>
+                    </div>
+
+                    <div className="selectMobile">
+                        <div className="row1">
+                            {renderList.slice(0, 10)}
+                        </div>
+                        <div className="row2">
+                            {renderList.slice(10, renderList.length-1)}
+                        </div>
                     </div>
                 </div>
 

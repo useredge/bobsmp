@@ -71,7 +71,7 @@
     color: white;
 }
 
-.select {
+.selectDesktop {
     padding-right: 10%;
     padding-left: 10%;
     padding: 1%;
@@ -82,6 +82,10 @@
     justify-content: space-around;
     align-items: center;
     background-color: #0d0e0f;
+}
+
+.selectMobile {
+    display: none;
 }
 
 .icon {
@@ -194,12 +198,8 @@
     margin-bottom: 10vh;
     padding: 1%;
     width: 100vw;
-    height: 5vw;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
     background-color: #0d0e0f;
 }
 
@@ -235,6 +235,33 @@
     justify-content: space-between;
     align-items: center;
     background-color: #0d0e0f;
+}
+
+.selectDesktop {
+    display: none;
+}
+
+.selectMobile {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
 }
 
 }

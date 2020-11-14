@@ -43,7 +43,6 @@
 }
 
 .discordButton {
-    margin-top: 2.5%;
     font-family: ProximaNovaBold, sans-serif;
     display: flex;
     align-items: baseline;
@@ -76,21 +75,67 @@
 @media only screen and (max-width: 768px) {
 
 .buttonsContainer{
-    margin-top: 5vh; 
+    margin-top: 5vh;
+    margin-bottom: 50vh;
+    width: 100vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
 }
     
 .discordButton {
-    margin-top: 30vh;
+    margin-top: 9px;
+    font-size: 12px;
     font-family: ProximaNovaBold, sans-serif;
     display: flex;
-    align-items: baseline;
+    align-items: center;
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
+}
+
+.ipButton {
+    color: #3b2409;
+    cursor: pointer;
+    font-family: ProximaNovaBold, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    transition-duration: 0.3s;
+    z-index: 10;
+}
+
+.ip {
+    outline: 1px solid #ffb86f;
+    border-bottom: 5px solid #BB6C00;
+    padding: 18px;
+    text-align: center;
+    background-color: #FF9300;
+    font-size: 12px;
+    color:white;
+}
+
+.discord {
+    padding: 18px;
+    background-color: #7289da;
+}
+
+.join {
+    margin-top: 10%;
+    color: white;
+    font-size: 12px;
+}
+
+.swap {
+    text-align: center;
+    width: 100%;
+    margin-top: 10%;
+    font-family: ProximaNovaBold, sans-serif;
+    color: white;
+    font-size: 12px;
 }
 
 }
