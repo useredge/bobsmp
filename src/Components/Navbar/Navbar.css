@@ -180,4 +180,10 @@ ul {
     transition-duration: 0.3s;
 }
 
+.shop {
+    background-color: rgba(0, 0, 0, 0);
+    outline: 0px solid rgb(255, 136, 0);
+    outline-offset: -1px;
+}
+
 }

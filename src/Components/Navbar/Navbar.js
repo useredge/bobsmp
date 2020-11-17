@@ -58,7 +58,7 @@ const Navbar = () => {
                         <li className={green}>HELP <i class="fas fa-question"/></li>
                     </Link>
                     <a href="https://shop.bobssmp.com/" style={{ textDecoration: 'none', color: 'white' }}>
-                        <div><li>SHOP <i class="fas fa-shopping-cart"/></li></div>
+                        <div className="shop"><li>SHOP <i class="fas fa-shopping-cart"/></li></div>
                     </a>
                 </ul>
             </nav>
