@@ -12,7 +12,8 @@ const Navbar = () => {
     let green = "green";
 
     // eslint-disable-next-line default-case
-    switch (window.location.pathname) {
+    if(!visible) {
+      switch (window.location.pathname) {
         case "/":
             blue += " permablue"
             break;
@@ -22,15 +23,17 @@ const Navbar = () => {
         case "/help":
             green += " permagreen"
             break;
+    } 
     }
-    
+
     switch (window.location.pathname.includes('/blog')) {
         case true: 
         purple += " permapurple"
         break;
         case false:
         break;
-    }
+    } 
+    
 
     return (
         <div>
@@ -55,7 +58,7 @@ const Navbar = () => {
                         <li className={green}>HELP <i class="fas fa-question"/></li>
                     </Link>
                     <a href="https://shop.bobssmp.com/" style={{ textDecoration: 'none', color: 'white' }}>
-                        <div className="shop"><li>SHOP <i class="fas fa-shopping-cart"/></li></div>
+                        <div><li>SHOP <i class="fas fa-shopping-cart"/></li></div>
                     </a>
                 </ul>
             </nav>
