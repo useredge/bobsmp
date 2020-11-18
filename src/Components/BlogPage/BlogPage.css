@@ -36,6 +36,11 @@
     margin-bottom: 4%;
 }
 
+.blogPost p {
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
 .statusPink {
     color: #db57de
 }
@@ -125,6 +130,11 @@
     display: block;
     width: 90vw;
     height: auto;
+}
+    
+.blogPost p {
+    margin-top: 4%;
+    margin-bottom: 4%;
 }
 
 .backToBlog, .backToBlog:visited {
