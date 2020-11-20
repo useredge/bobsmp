@@ -115,7 +115,27 @@
     color:white;
     margin-right: 2%;
     margin-left: 2%;
+    cursor: pointer;
 }
+
+.fa-arrow-left {
+    transition-duration: 0.2s;
+}
+
+.fa-arrow-right {
+    transition-duration: 0.2s;
+}
+
+.fa-arrow-left:hover {
+    color: #fcdd52;
+    transition-duration: 0.2s;
+}
+
+.fa-arrow-right:hover {
+    transition-duration: 0.2s;
+    color: #3DCAFF;
+}
+
 
 .arrowsMobile {
     display: none;

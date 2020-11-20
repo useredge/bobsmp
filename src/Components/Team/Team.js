@@ -35,7 +35,7 @@ const Team = () => {
             </div>
                 <div className="centerer" style={{backgroundColor: '#0d0e0f'}}>
                     <div className="selectDesktop">
-                        <i class="fas fa-arrow-left arrowsDesktop icon" onClick={() => {
+                        <i class="fas fa-arrow-left arrowsDesktop" onClick={() => {
                             if(which === 0) {
                                 setWhich(Members.length - 1)
                             }
@@ -48,7 +48,7 @@ const Team = () => {
 
                             {renderList}
 
-                        <i class="fas fa-arrow-right arrowsDesktop icon" onClick={() => {
+                        <i class="fas fa-arrow-right arrowsDesktop" onClick={() => {
                             if(which === Members.length - 1) {
                                 setWhich(0)
                             }
@@ -94,7 +94,7 @@ const Team = () => {
                                 </HideUntilLoaded>
                             </AnimateOnChange>
                             <div className="mobileArrows">
-                        <i class="fas fa-arrow-left arrowsMobile icon" style={{marginLeft: '3vw'}} onClick={() => {
+                        <i class="fas fa-arrow-left arrowsMobile" style={{marginLeft: '3vw'}} onClick={() => {
                             if(which === 0) {
                                 setWhich(Members.length - 1)
                             }
@@ -104,7 +104,7 @@ const Team = () => {
                             }
                         }
                             }/>
-                        <i class="fas fa-arrow-right arrowsMobile icon" style={{marginRight: '3vw'}} onClick={() => {
+                        <i class="fas fa-arrow-right arrowsMobile" style={{marginRight: '3vw'}} onClick={() => {
                             if(which === Members.length - 1) {
                                 setWhich(0)
                             }

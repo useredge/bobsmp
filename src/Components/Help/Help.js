@@ -40,7 +40,7 @@ const Help = () => {
                   <div className="helpContainer">
                       <img src="/images/book.png" alt="thumbnail" className="helpThumbnail"/>
                       <h1 className="helpTitle"><i class="fas fa-wrench"/> This page is currently work-in-progress</h1>
-                      <p className="helpText">Come back later!</p>
+                      <p className="helpText">Our editors are currently writing this page into creation.. they'll be done soon! Come back later!</p>
                   </div>
                 </div>
         <Footer />
