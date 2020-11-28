@@ -1,7 +1,6 @@
 .bg {
     width: 100%;
     min-height: 600px;
-    background-position: bottom;
     background-size: cover;
     height: 65vh;
     z-index: -5;

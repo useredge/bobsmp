@@ -38,7 +38,7 @@ const Home = () => {
         animate="visible"
         exit="hidden"
       >
-          <Header link="/images/bareboneBg.webp"/>
+          <Header link="/images/newBg.jpg" position='center'/>
           <Navbar/>
           <Logo/>
           <Buttons/>

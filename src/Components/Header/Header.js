@@ -8,7 +8,7 @@ const Header = (source) => {
         else dark = "bg"
     return(
             <div className={dark} style={{
-                backgroundImage: 'linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%), url(' + source.link + ')'
+                backgroundImage: 'linear-gradient(to bottom, rgba(255,255,255,0) 0%,rgba(0,0,0,1) 100%), url(' + source.link + ')', backgroundPosition: source.position
             }} />
     )
 }
