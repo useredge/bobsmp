@@ -1,17 +1,16 @@
 .bobTitle {
-    padding-bottom: 3%;
     color: white;
-    font-family: ProximaNovaBold, sans-serif;
+    font-family: MCTen, sans-serif;
     letter-spacing: 2px;
-    font-size: 40px;
+    width: 100%;
+    text-align: center;
+    z-index: 4;
+    font-size: 3vw;
 }
 
-.spanblue {
-    color: deepskyblue;
-}
-
-.spanyellow {
-    color: yellow;
+.star {
+    width: 3vw;
+    height: auto;
 }
 
 .thumbnailContainer {
@@ -39,26 +38,27 @@
 
 .text {
     color:white;
-    width: 60%;
-    font-family: ProximaNova, sans-serif;
+    width: 50%;
+    font-family: Minecraftia, sans-serif;
+    line-height: 150%;
+}
+
+.playerContainer {
+    width: 70vw;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    align-items: center;
+    z-index: 3;
+}
+
+.playerContainerWrapper {
+    margin-top: 15vh;
     display: flex;
     flex-direction: column;
-    word-wrap: break-word;
-    padding: 50px;
-    font-size: 1.1rem;
-    line-height: 200%;
-}
-
-.container {
-    margin-top: 3%;
-    display: flex;
-    flex-flow: row-reverse;
-    justify-content: center;
     align-items: center;
-}
-
-.boldWrap {
-    font-family: ProximaNovaBold, sans-serif;
+    justify-content: center;
 }
 
 .playButton {
@@ -79,7 +79,7 @@
 
 @media only screen and (max-width: 768px) {
 
-.container {
+.playerContainer {
     margin-top: 3%;
     width: 100vw;
     display: flex;

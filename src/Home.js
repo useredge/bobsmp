@@ -2,7 +2,7 @@ import React from 'react';
 import Navbar from "./Components/Navbar/Navbar";
 import Header from "./Components/Header/Header";
 import Logo from "./Components/Logo/Logo";
-import Buttons from "./Components/Buttons/Buttons";
+import { IpButton } from "./Components/Buttons/Buttons";
 import Player from "./Components/Player/Player";
 import Team from "./Components/Team/Team";
 import Footer from "./Components/Footer/Footer";
@@ -37,11 +37,12 @@ const Home = () => {
         initial="hidden"
         animate="visible"
         exit="hidden"
+        style={{backgroundImage: "url('/images/bricks.jpg')"}}
       >
           <Header link="/images/newBg.jpg" position='center'/>
           <Navbar/>
           <Logo/>
-          <Buttons/>
+          <IpButton/>
           <Player/>
           <Team />
           <Footer />

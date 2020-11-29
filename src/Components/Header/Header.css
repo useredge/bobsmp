@@ -3,11 +3,12 @@
     min-height: 600px;
     background-size: cover;
     height: 65vh;
-    z-index: -5;
+    z-index: 0;
     top: 0;
     left: 0;
     right: 0;
     position: absolute;
+    transform: translateY(10vh);
     transition-duration: 2s;
 }
 

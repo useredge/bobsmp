@@ -5,7 +5,7 @@ import { AnimateOnChange } from 'react-animation'
 import TextTransition, { presets } from "react-text-transition";
 import { nodeName } from "jquery";
 
-const Buttons = () => {
+export const IpButton = () => {
 
     const [value, setValue] = useState("BOBSSMP.COM");
     const [title, setTitle] = useState("CLICK TO COPY");
@@ -27,7 +27,7 @@ const Buttons = () => {
                     setTimeout(() => setTitle("CLICK TO COPY"), 5000)
                 }}>
                     <div className="ip">
-                        <h2><i class="fas fa-external-link-square-alt"/> BOBSSMP.COM</h2>
+                        <p>BOBSSMP.COM</p>
                     </div>
                     <AnimateOnChange
                         className="swap"
@@ -38,17 +38,18 @@ const Buttons = () => {
                     </AnimateOnChange>
                 </div>
             </CopyToClipboard>
-
-
-                <div className="discordButton">
-                    <div className="outline">
-                        <a style={{textDecoration: 'none', color: 'white'}} rel="noreferrer" target="_blank" href="https://discord.gg/Vk7zQ7V"><h2 className="discord"><i className="fab fa-discord"></i> OUR DISCORD</h2></a>
-                    </div>
-                    <h2 className="join">JOIN OUR DISCORD SERVER!</h2>
-                </div>
             </div>
         </div>
     )
 }
 
-export default Buttons;
+export const DiscordButton = () => {
+    return (
+        <div className="discordButton">
+            <div className="outline">
+                <a style={{textDecoration: 'none', color: 'white'}} rel="noreferrer" target="_blank" href="https://discord.gg/Vk7zQ7V"><h2 className="discord"><i className="fab fa-discord"></i> OUR DISCORD</h2></a>
+            </div>
+            <h2 className="join">JOIN OUR DISCORD SERVER!</h2>
+        </div>
+    )
+}

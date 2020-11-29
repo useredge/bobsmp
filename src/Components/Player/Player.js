@@ -12,17 +12,21 @@ class Player extends React.Component {
 
     render() {
         return (
-            <div className="container">
+            <div className="playerContainerWrapper">
+                <p className="bobTitle"><img src="/images/Pixel Icons/star.png" className="star"/>  Who are we?</p>
+            <div className="centerer">
+                <div className="playerContainer">
                 <div className="text">
-                    <h1 className="bobTitle">What is <span className="spanyellow">Bob's </span><span className="spanblue">SMP</span>?</h1>
-                    <p><span className="boldWrap">Bob's SMP</span> is a Minecraft survival multi-player (SMP) server, that aims to add new content that seems modded, but is 100% pure vanilla. It adds many custom attributes and new experiences to the server <span className="boldWrap"> without ever needing to touch the player's client!</span> (Except for the requirement of Optifine at the moment).<br/> This will start out as a <span className="boldWrap"> private event</span>, while simultaneously acting as a long-standing beta for players to enjoy, and for us testers to see what works or not. This is very much an <span className="boldWrap"> ongoing project.</span> It is a huge work in progress, but we have <span className="boldWrap">high standards and a clear vision</span> as to what we want this server to become. With your help and generous donations, we will create entirely new and refreshing gameplay for Minecraft!</p>
+                    <p>Bob's SMP is a Minecraft survival multi-player (SMP) server, that aims to add new content that seems modded, but is 100% pure vanilla. It adds many custom attributes and new experiences to the server without ever needing to touch the player's client! (Except for the requirement of Optifine at the moment).<br/> This will start out as a  private event, while simultaneously acting as a long-standing beta for players to enjoy, and for us testers to see what works or not. This is very much an ongoing project. It is a huge work in progress, but we have high standards and a clear vision as to what we want this server to become. With your help and generous donations, we will create entirely new and refreshing gameplay for Minecraft!</p>
                 </div>
                 <div className="thumbnailContainer youtube-link" youtubeid="WcEstdB4giw" ref={el => this.el = el}>
                     <div className="playButton">
                         <i class="fas fa-play-circle"/>
-                        <h3 style={{textShadow: '0px 1px 14px rgba(0,0,0,1)'}}>WATCH THE VIDEO</h3>
+                        <h3 style={{textShadow: '0px 1px 14px rgba(0,0,0,1)'}}>CLICK TO PLAY</h3>
                     </div>
                 </div>
+                </div>
+            </div>
             </div>
         )
     }

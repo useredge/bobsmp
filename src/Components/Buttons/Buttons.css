@@ -1,19 +1,18 @@
 .ipButton {
     color: #3b2409;
     cursor: pointer;
-    font-family: ProximaNovaBold, sans-serif;
+    font-family: MCTen, sans-serif;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 16px;
     transition-duration: 0.3s;
     z-index: 10;
 }
 
-.ipButton:hover {
+.ip:hover {
     transition-duration: 0.3s;
-    opacity: 0.7;
+    box-shadow: 0 0 20px rgba(255, 227, 255, 0.8);
 }
 
 .ip {
@@ -22,17 +21,18 @@
     padding: 20px;
     text-align: center;
     background-color: #FF9300;
-    font-size: 16px;
+    font-size: 2.5vw;
     color:white;
+    transition-duration: 0.3s;
 }
 
 .swap {
     text-align: center;
     width: 100%;
-    margin-top: 10%;
-    font-family: ProximaNovaBold, sans-serif;
+    margin-top: 5%;
+    font-family: Minecraftia, sans-serif;
     color: white;
-    font-size: 16px;
+    font-size: 1.3vw;
 }
 
 .buttonsContainer{ 
