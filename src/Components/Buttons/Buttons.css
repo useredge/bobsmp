@@ -43,12 +43,14 @@
 }
 
 .discordButton {
-    font-family: ProximaNovaBold, sans-serif;
+    margin-top: 2vh;
+    font-family: MCTen, sans-serif;
     display: flex;
     align-items: baseline;
     justify-content: center;
     flex-direction: column;
     cursor: pointer;
+    font-size: 2vw;
 }
 
 .discord {
@@ -62,9 +64,9 @@
 }
 
 .join {
-    margin-top: 10%;
+    margin-top: 5%;
     color: white;
-    font-size: 16px;
+    font-size: 1vw;
 }
 
 .discordButton:hover {

@@ -3,6 +3,7 @@ import $ from 'jquery';
 import './grt-youtube-popup.js'
 import './grt-youtube-popup.css'
 import './Player.css'
+import { DiscordButton } from '../Buttons/Buttons.js';
 
 class Player extends React.Component {
     componentDidMount() {
@@ -14,19 +15,18 @@ class Player extends React.Component {
         return (
             <div className="playerContainerWrapper">
                 <p className="bobTitle"><img src="/images/Pixel Icons/star.png" className="star"/>  Who are we?</p>
-            <div className="centerer">
                 <div className="playerContainer">
                 <div className="text">
-                    <p>Bob's SMP is a Minecraft survival multi-player (SMP) server, that aims to add new content that seems modded, but is 100% pure vanilla. It adds many custom attributes and new experiences to the server without ever needing to touch the player's client! (Except for the requirement of Optifine at the moment).<br/> This will start out as a  private event, while simultaneously acting as a long-standing beta for players to enjoy, and for us testers to see what works or not. This is very much an ongoing project. It is a huge work in progress, but we have high standards and a clear vision as to what we want this server to become. With your help and generous donations, we will create entirely new and refreshing gameplay for Minecraft!</p>
+                    <p>Bob's SMP is a Minecraft survival multi-player (SMP) server, that aims to add new content that seems modded, but is 100% pure vanilla. It adds many custom attributes and new experiences to the server without ever needing to touch the player's client! (Except for the requirement of Optifine at the moment).</p>
+                    <DiscordButton />
                 </div>
                 <div className="thumbnailContainer youtube-link" youtubeid="WcEstdB4giw" ref={el => this.el = el}>
                     <div className="playButton">
                         <i class="fas fa-play-circle"/>
-                        <h3 style={{textShadow: '0px 1px 14px rgba(0,0,0,1)'}}>CLICK TO PLAY</h3>
+                        <p style={{textShadow: '0px 1px 14px rgba(0,0,0,1)'}}>CLICK TO PLAY</p>
                     </div>
                 </div>
                 </div>
-            </div>
             </div>
         )
     }
