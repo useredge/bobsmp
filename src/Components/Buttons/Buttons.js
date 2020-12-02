@@ -46,9 +46,7 @@ export const IpButton = () => {
 export const DiscordButton = () => {
     return (
         <div className="discordButton">
-            <div className="outline">
-                <a style={{textDecoration: 'none', color: 'white'}} rel="noreferrer" target="_blank" href="https://discord.gg/Vk7zQ7V"><p className="discord"><i className="fab fa-discord"></i> JOIN OUR DISCORD</p></a>
-            </div>
+                <a style={{textDecoration: 'none', color: 'white'}} rel="noreferrer" target="_blank" href="https://discord.gg/Vk7zQ7V"><p className="discord"><img src="/images/Pixel Icons/discordfiltered.png" className="discordIcon"/>JOIN OUR DISCORD</p></a>
             <p className="join">JOIN OUR DISCORD SERVER!</p>
         </div>
     )
