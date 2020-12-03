@@ -14,7 +14,7 @@
     font-size: 3vw;
 }
 
-.star {
+.float {
     width: 3vw;
     height: auto;
     animation: iconBobbing 1s infinite alternate ease-in-out;
@@ -53,6 +53,7 @@
     justify-self: end;  
     display: flex;
     flex-direction: column;
+    margin-top: 5vh;
 }
 
 .playerContainer {
@@ -67,7 +68,7 @@
 
 .playerContainerWrapper {
     width: 100vw;
-    margin-top: 15vh;
+    margin-top: 10vh;
     margin-bottom: 5vh;
     display: flex;
     flex-direction: column;
@@ -86,15 +87,15 @@
     font-size: 1.6vw;
 }
 
-.playButton i {
-    font-size: 100px;
-    opacity: 0.9;
-    filter: drop-shadow(0 0 30px rgba(0,0,0,0.5));
-}
-
 .playerAndButton {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.watchMore {
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -103,27 +104,40 @@
     text-decoration: none;
     font-size: 2.5vw;
     padding: 10px;
-    display: flex;
-    vertical-align: middle;
-    align-items: center;
-    justify-content: center;
     font-family: MCTen, sans-serif;
     color: white;
-    background-color: #ff002a;
+    background-color: #2ee700;
     border: 2px solid white;
     transition-duration: 0.3s;
+    text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
 }
 
 .watchText:hover {
-    background-color: rgb(89, 255, 47);
+    background-color: #ff002a;
     transition-duration: 0.3s;
 }
 
 .youtubeIcon {
-    width: 3vw;
+    width: 3.5vw;
     height: auto;
-    filter: brightness(1000%);
+    filter: brightness(1000%) drop-shadow(0px 3px 0px rgba(0, 0, 0, 0.3));
     margin-right: 1vw;
+    transform: translateY(0.5vh);
+}
+
+.welcome {
+    color: white;
+    font-family: MCTen, sans-serif;
+    font-size: 2vw;
+    margin-bottom: 2vh;
+}
+
+.spanblue {
+    color: #5cb6ff;
+}
+
+.spanyellow {
+    color: #ffd607;
 }
 
 @media only screen and (max-width: 768px) {

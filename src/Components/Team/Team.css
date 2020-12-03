@@ -1,6 +1,6 @@
 .widgetContainer {
     width: 100vw;
-    background-color: rgba(13,14,15,1);
+    background-color: #070617;
     margin-bottom: 10%;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .render {
-    background-image: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%), url("bgRender2.webp");
+    background-image: url("bgRender2.webp");
     background-repeat: no-repeat;
     background-size: contain;
     width: 50vw;
@@ -32,7 +32,6 @@
 
 .teamText {
     width: 50vw;
-    background: linear-gradient(to top, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 50%);
     padding: 5rem;
     display: flex;
     flex-direction: column;
@@ -44,19 +43,19 @@
 .personName {
     color: yellow;
     font-size: 2rem;
-    font-family: ProximaNovaBold, sans-serif;
+    font-family: MCTen, sans-serif;
 }
 
 .personDescription {
     font-size: 1.2rem;
     color: white;
-    font-family: ProximaNova, sans-serif;
+    font-family: Minecraftia, sans-serif;
     padding: 20px;
 }
 
 .titleWrapper {
     padding-top: 2%;
-    background-color: rgba(13,14,15,1);;
+    background-color: #070617;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -65,7 +64,7 @@
 }
 
 .subtitle {
-    font-family: ProximaNova, sans-serif;
+    font-family: Minecraftia, sans-serif;
     padding: 10px;
     font-size: 1.2rem;
     color: white;
@@ -81,7 +80,7 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #0d0e0f;
+    background-color: #070617;
 }
 
 .selectMobile {
@@ -142,9 +141,15 @@
 }
 
 .meet {
-    font-size: 3em;
-    font-family: ProximaNovaBold, sans-serif;
+    font-size: 3vw;
+    font-family: MCTen, sans-serif;
     color: white;
+}
+
+.users {
+    width: 3vw;
+    height: auto;
+    transform: translateY(10px);
 }
 
 .mobileArrows {

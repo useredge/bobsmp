@@ -30,10 +30,10 @@ const Team = () => {
 
         <div className="teamComponent">
             <div className="titleWrapper">
-                <h1 className="meet">Meet the Team!</h1>
+                <p className="meet"><img src="/images/Pixel Icons/users.png" className="users"/> Meet the Team!</p>
                 <p className="subtitle">These are the volunteers who helped make this possible!</p>
             </div>
-                <div className="centerer" style={{backgroundColor: '#0d0e0f'}}>
+                <div className="centerer" style={{backgroundColor: '#070617'}}>
                     <div className="selectDesktop">
                         <i class="fas fa-arrow-left arrowsDesktop" onClick={() => {
                             if(which === 0) {

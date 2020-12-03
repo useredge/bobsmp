@@ -48,6 +48,7 @@
     display: flex;
     align-self: baseline;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     cursor: pointer;
     font-size: 2.5vw;
@@ -67,6 +68,7 @@
 }
 
 .discordIcon {
+    transform: translateY(-5px);
     width: 3vw;
     height: auto;
     margin-right: 1vw;
