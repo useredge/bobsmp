@@ -1,4 +1,4 @@
-import React from 'react';
+import { useState, useEffect } from 'react';
 import Navbar from "./Components/Navbar/Navbar";
 import Header from "./Components/Header/Header";
 import Logo from "./Components/Logo/Logo";
@@ -9,8 +9,11 @@ import Footer from "./Components/Footer/Footer";
 import { motion } from 'framer-motion'
 import './Home.css';
 import BlogPreview from './Components/BlogPreview/BlogPreview';
+import client from './Components/client'
 
 const Home = () => {
+
+    const [articles, setArticles] = useState([]);
 
     const variants = {
         visible: {
@@ -32,6 +35,19 @@ const Home = () => {
         },
       }
 
+      const fetchData = async() => {
+        try {
+          const resp = await client.getEntries({limit: 3})
+          setArticles(resp.items);
+        } catch (error) {
+          console.log(error);
+        }
+      }
+
+      useEffect(() => {
+        fetchData();
+      }, [])
+
   return (
       <motion.div
         variants={variants}
@@ -46,7 +62,7 @@ const Home = () => {
           <IpButton/>
           <Player/>
           <Team />
-          <BlogPreview/>
+          <BlogPreview posts={articles}/>
           <Footer />
       </motion.div>
   );
