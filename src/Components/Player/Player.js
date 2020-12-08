@@ -24,13 +24,14 @@ class Player extends React.Component {
             <div className="playerAndButton">
                 <div className="thumbnailContainer youtube-link" youtubeid="WcEstdB4giw" ref={el => this.el = el}>
                     <div className="playButton">
-                        <i class="fas fa-play-circle"/>
+                        <i class="far fa-play-circle"/>
                         <p style={{textShadow: '0px 1px 14px rgba(0,0,0,1)'}}>CLICK TO PLAY</p>
                     </div>
                 </div>
-                <div className="watchMore">
-                    <a className="watchText" rel="noreferrer" target="_blank" href="https://www.youtube.com/channel/UCn5rWdZ2ypG6-BZLWRpHUZg" ><img src="/images/playbutton.png" className="youtubeIcon"/>WATCH MORE!</a>
-                </div>
+                <a className="watchMore" rel="noreferrer" target="_blank" href="https://www.youtube.com/channel/UCn5rWdZ2ypG6-BZLWRpHUZg" >
+                    <img src="/images/playbutton.png" className="youtubeIcon"/>
+                    <p className="watchText" >  WATCH MORE!</p>
+                </a>
             </div>
                 </div>
             </div>

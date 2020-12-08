@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'Minecraftia';
-    src:local('Minecraftia'), url("./font/Minecraftia-Regular.ttf") format('woff');
+    src:local('Minecraftia'), url("./font/Minecraftia-Regular.ttf");
 }
 @font-face {
     font-family: 'MCTen';
-    src:local('MCTen'), url("./font/MinecraftTen-VGORe.ttf") format('woff');
+    src:local('MCTen'), url("./font/MinecraftTen-VGORe.ttf");
 }
 
 ::-webkit-scrollbar {   

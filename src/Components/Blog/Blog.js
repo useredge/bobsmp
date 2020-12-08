@@ -1,8 +1,8 @@
-import React, {useEffect, useState} from "react";
+import {useEffect, useState} from "react";
 import Header from "../Header/Header";
 import Navbar from "../Navbar/Navbar";
 import './Blog.css';
-import client from './client';
+import client from '../client'
 import BlogItems from '../BlogItems/BlogItems'
 import Footer from "../Footer/Footer"
 import { motion } from 'framer-motion'

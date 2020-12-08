@@ -8,6 +8,7 @@ import Team from "./Components/Team/Team";
 import Footer from "./Components/Footer/Footer";
 import { motion } from 'framer-motion'
 import './Home.css';
+import BlogPreview from './Components/BlogPreview/BlogPreview';
 
 const Home = () => {
 
@@ -45,6 +46,7 @@ const Home = () => {
           <IpButton/>
           <Player/>
           <Team />
+          <BlogPreview/>
           <Footer />
       </motion.div>
   );
