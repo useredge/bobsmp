@@ -1,0 +1,84 @@
+.blogPreviewContainer {
+    justify-self: center;
+    display: flex;
+    width: 75vw;
+    height: 30vh;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.blogSub {
+    color:white;
+    font-family: Minecraftia, sans-serif;
+    width: 100%;
+    font-size: 1vw;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.side {
+    min-width: 20vw;
+    min-height: 25vh;
+    background-size: cover;
+    outline: 3px solid white;
+    z-index: 9;
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
+    transition-duration: 0.3s;
+}
+
+.center {
+    box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
+    min-width: 25vw;
+    min-height: 30vh;
+    z-index: 10;
+    background-size: cover;
+    outline: 3px solid white;
+    transition-duration: 0.3s;
+}
+
+.side:hover, .center:hover {
+    outline: 3px solid yellow;
+    transition-duration: 0.3s;
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.1);
+}
+
+.blogLayout {
+    display: flex;
+    flex-direction: column;
+}
+
+.viewBlogs {
+    text-shadow: 0px 5px 0px rgba(0, 0, 0, 0.3);
+    font-size: 3vw;
+    font-family: MCTen, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 1vh 3vw;
+    background-color: #c720e1;
+    border-bottom: 1vh solid #9e1ab4;
+    margin-top: 3vh;
+    transition-duration: 0.3s;
+}
+
+.viewBlogs:hover {
+    background-color: #ff0037;
+    border-bottom: 0px solid #9e1ab4;
+    transform: translateY(1vh);
+    transition-duration: 0.3s;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+.side {        
+    min-width: 17.5vw;
+    min-height: 20vh;
+}
+
+.center {
+    min-width: 22.5vw;
+    min-height: 25vh;
+}
+
+}
