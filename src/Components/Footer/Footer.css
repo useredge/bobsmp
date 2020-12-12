@@ -1,12 +1,20 @@
 .footer {
-    padding: 1em;
-    font-family: ProximaNovaBold, sans-serif;
+    padding: 1vh;
+    font-family: MCTen, sans-serif;
     z-index: 20;
     width: 100vw;
     background-color: #e5b754;
+    display: flex;
+    justify-content: center;
 }
 
 .flex {
+    margin-top: 10vh;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
     color: #533500;
     display: flex;
     flex-direction: row;
@@ -17,21 +25,18 @@
 .footerButton {
     cursor: pointer;
     display: flex;
+    flex-direction: column;
     justify-self: left;
     align-items: center;
     transition-duration: 0.5s;
 }
 
 .fIp {
-    background-color: #2b1b00;
-    color: orange;
-    padding: 0.6em;
-}
-
-.fComing {
-    background-color: #2b1b00;
-    color: yellow;
-    padding: 0.6em;
+    background-color: #d99724;
+    color: #e5b054;
+    padding: 2vh 1vw 1vh 1vw;
+    font-size: 3.5vw;
+    transition-duration: 0.3s;
 }
 
 .socials {
@@ -39,7 +44,7 @@
     display: flex;
     flex-direction: row;
     justify-self: right;
-    font-size: 1.5em;
+    font-size: 2vw;
 }
 
 .socials i {
@@ -48,28 +53,38 @@
 }
 
 .socials a {
-    color: #462c00;
+    color: #c69848;
 }
 
 .socials a:visited {
-    color: #462c00;
+    color: #c69848;
 }
 
 .socials i:hover {
-    color: #794d00;
+    color: #9e7939;
     transition-duration: 0.5s;
 }
 
-.footerButton:hover {
-    filter: brightness(150%);
-    transition-duration: 0.5s;
+.fIp:hover {
+    background-color: #ac771c;
+    transition-duration: 0.3s;
 }
 
 .copy {
-    background-color: rgba(0, 0, 0, 0);
-    color: #462c00;
-    padding: 0.6em;
+    font-family: Minecraftia, sans-serif;
+    color: #d99724;
+    padding: 1vh;
 }
+
+.socialWrapper {
+    font-size: 3vw;
+    color: #c69848;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 @media only screen and (max-width: 768px) {
 

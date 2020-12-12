@@ -8,12 +8,13 @@
 }
 
 .grtyoutube-popup-content {
-	margin-top:150px;
+	margin-top:50px;
 	width:95%;
 	max-width:1366px;
 	margin-left:auto;
 	margin-right:auto;
 	position:relative;
+	transition-duration: 0.3s;
 }
 
 .grtyoutube-popup-close {
@@ -23,6 +24,7 @@
 	color:#FFF;
 	font-size:25px;
 	cursor:pointer;
+	transition-duration: 0.3s;
 }
 
 .grtyoutube-iframe {
@@ -37,7 +39,7 @@
 }
 
 .grtyoutube-dark-theme{
-	background: rgba(0,0,0, 0.85);
+	background: rgba(0,0,0, 0.95);
 }
 
 .grtyoutube-dark-theme .grtyoutube-popup-content {
