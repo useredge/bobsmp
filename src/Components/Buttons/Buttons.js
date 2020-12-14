@@ -27,7 +27,7 @@ export const IpButton = () => {
                     setTimeout(() => setTitle("CLICK TO COPY"), 5000)
                 }}>
                     <div className="ip">
-                        <p>BOBSSMP.COM</p>
+                        <h1 className="bobSmp">BOBSSMP.COM</h1>
                     </div>
                     <AnimateOnChange
                         className="swap"
@@ -47,7 +47,7 @@ export const DiscordButton = () => {
     return (
         <div className="discordButton">
                 <a style={{textDecoration: 'none', color: 'white'}} rel="noreferrer" target="_blank" href="https://discord.gg/Vk7zQ7V"><p className="discord"><img src="/images/Pixel Icons/discordfiltered.png" className="discordIcon"/>JOIN OUR DISCORD</p></a>
-            <p className="join">JOIN OUR DISCORD SERVER!</p>
+            <h1 className="join">JOIN OUR DISCORD SERVER!</h1>
         </div>
     )
 }

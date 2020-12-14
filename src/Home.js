@@ -6,16 +6,17 @@ import { IpButton } from "./Components/Buttons/Buttons";
 import Player from "./Components/Player/Player";
 import Team from "./Components/Team/Team";
 import Footer from "./Components/Footer/Footer";
-import { motion } from 'framer-motion'
+import { motion, useAnimation } from 'framer-motion'
 import './Home.css';
 import BlogPreview from './Components/BlogPreview/BlogPreview';
 import client from './Components/client'
+import VisibilitySensor from 'react-visibility-sensor'
 
 const Home = () => {
 
     const [articles, setArticles] = useState([]);
 
-    const variants = {
+    const pageVariants = {
         visible: {
           opacity: 1,
           transition: {
@@ -35,6 +36,17 @@ const Home = () => {
         },
       }
 
+      const blogVariants = {
+        visible: {
+          background: 'linear-gradient(to top, #e5b754 100%, rgba(229, 183, 82, 0) 0%)',
+          transition: {type: "easeInOut", duration: 1}
+        },
+        hidden: {
+          background: 'linear-gradient(to top, #e5b754 40%, rgba(229, 183, 82, 0) 0%)',
+          transition: {type: "easeInOut", duration: 1}
+        }
+      }
+
       const fetchData = async() => {
         try {
           const resp = await client.getEntries({limit: 3})
@@ -47,14 +59,33 @@ const Home = () => {
       useEffect(() => {
         fetchData();
       }, [])
+      
+      const controls = useAnimation();
+
+      const animateIn = () => {
+        controls.start("visible");
+      }
+
+      const animateOut = () => {
+        controls.start("hidden")
+      }
+
+      const onChange = (isVisible) => {
+        if(isVisible) {
+          animateIn()
+        }
+        else 
+        animateOut();
+        console.log(isVisible)
+      }
 
   return (
       <motion.div
-        variants={variants}
+        variants={pageVariants}
         initial="hidden"
         animate="visible"
         exit="hidden"
-        style={{backgroundImage: "url('/images/bricks.jpg')"}}
+        style={{background: 'url("/images/bricks.jpg")'}}
       >
           <Header link="/images/newBg.jpg" position='center'/>
           <Navbar/>
@@ -62,8 +93,16 @@ const Home = () => {
           <IpButton/>
           <Player/>
           <Team />
+          <motion.div className="centerer"
+          style={{paddingTop: '10vh'}}
+          animate={controls}
+          variants={blogVariants}
+          >
           <BlogPreview posts={articles}/>
+          </motion.div>
+          <VisibilitySensor partialVisibility={false} onChange={onChange}>
           <Footer />
+          </VisibilitySensor>
       </motion.div>
   );
 }

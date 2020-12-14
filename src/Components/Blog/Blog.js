@@ -10,7 +10,6 @@ import { motion } from 'framer-motion'
 const Blog = () => {
   
   const [articles, setArticles] = useState([]);
-  const [image, setImage] = useState();
   
   useEffect(() => {
     fetchData();
@@ -20,7 +19,6 @@ const Blog = () => {
     try {
       const resp = await client.getEntries();
       setArticles(resp.items);
-      setImage(resp.items[0].fields.thumbnail.fields.file.url)
 
     } catch (error) {
       console.log(error);
@@ -55,7 +53,6 @@ const Blog = () => {
         animate="visible"
         exit="hidden"
       >
-      <Header link={image}/>
       <Navbar />
         <div className="centerer">
           <div className="blogGridContainer">

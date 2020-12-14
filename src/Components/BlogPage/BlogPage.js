@@ -27,7 +27,7 @@ const BlogPage = () => {
         setArticle(resp.items[0].fields);
         setImage(resp.items[0].fields.thumbnail.fields.file.url)
         setContent(resp.items[0].fields.content)
- 
+        
       } catch (error) {
         console.log(error);
       }

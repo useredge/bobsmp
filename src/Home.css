@@ -9,4 +9,11 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+    transition-duration: 0.3s;
+    background-color: rgba(229, 183, 82, 0);
+}
+
+.gradiented {
+    transition-duration: 0.3s;
+    background-color: #e5b754;
 }

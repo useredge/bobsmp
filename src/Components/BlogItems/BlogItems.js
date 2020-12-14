@@ -7,7 +7,7 @@ const BlogItems = ({posts}) => {
     return (
         <div>
         <div className="topPostContainer">
-        <h1 className="topPost"><i class="fas fa-star"/> MOST RECENT POST</h1>
+        <h1 className="topPost">Keep up with our updates</h1>
         {
           posts.slice(0,1).map((article, index) => <BlogItem article={article} key={index}/>)
         }
