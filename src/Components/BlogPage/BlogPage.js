@@ -1,6 +1,6 @@
 import React, {Component, useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
-import client from '../client'
+import client from '../Blog/client'
 import Navbar from '../Navbar/Navbar'
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer"
