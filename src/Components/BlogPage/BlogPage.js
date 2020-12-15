@@ -75,6 +75,8 @@ const BlogPage = () => {
         },
       }
 
+      if (article === null) return <h1 style={{fontSize: '100px', color: 'white', width: '100%', textAlign: 'center', fontFamily: 'MCTen'}}>Loading...</h1>
+      
         return (
           <motion.div
         variants={list}
