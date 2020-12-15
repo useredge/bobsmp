@@ -101,33 +101,15 @@ const Members = [
     },
     {
         value: 11,
-        color: "aqua",
-        name: "ScorchVX",
-        role: "Textures Artist",
-        image: "/images/skins/Scorch.png",
-        icon: "/images/icons/Scorch.png",
-        description: "I'm Scorch! I help texture in-game items for the team to play with. Seeing my artwork brought out to it's full potential has been an awesome feeling, which is why I've loved being apart of this project so much!"
-    },
-    {
-        value: 12,
-        color: "aqua",
-        name: "SirHadoken",
-        role: "Sounds Team",
-        image: "/images/skins/sirhadoken.png",
-        icon: "/images/icons/Sirhadoken.png",
-        description: "Howdy, I'm SirHadoken. You might have heard of me for my work in Geometry Dash, but I also produce music in my spare time, and I've made some songs for the OST of the SMP. I am really glad to have the opportunity to help build the world of sound within this server!"
-    },
-    {
-        value: 13,
         color: "white",
         name: "Spike",
         role: "Blockbench Modeler",
         image: "/images/skins/spike.png",
         icon: "/images/icons/Spike.png",
-        description: "Hey guys! I'm Spike and I am a Developer and 3D modeler who has created a large portion of BOB SMP. I have created and implemented every custom item and asset, while the wonderful staff team has created the variety of textures. I have also developed a variety of new Minecraft mobs such as a frog, scorpion, alligator, penguin, just to name a few. \nI have also created an add-on pack called Blockus of 300+ custom Minecraft building blocks, which are obtainable and craftable in game. I have also modeled a wide-range of furnitures, machinery, hats, and much more."
+        description: "Hey guys! I'm Spike and I am a AI specialist and 3D modeler. I have implemented many custom items and assets. I have also made custom mobs for this project! A variety of new Minecraft mobs such as a frog, scorpion, alligator, penguin, just to name a few. Go and find them in-game!"
     },
     {
-        value: 14,
+        value: 12,
         color: "deepskyblue",
         name: "SplatterDash",
         role: "Sounds Team",
@@ -136,7 +118,7 @@ const Members = [
         description: "Hi! I'm SplatterDash (but you can call me Splatter, and I do random sounds quite often. I helped with the OST and SFX here in the SMP, which is actually my first larger project I've worked on. While the sounds may not be my best compositionally and production-wise, I definitely have a place in my heart for these and hope you enjoy listening to them throughout the server!"
     },
     {
-        value: 15,
+        value: 13,
         color: "fuchsia",
         name: "MeetMeLater",
         role: "Textures Artist",
@@ -145,7 +127,7 @@ const Members = [
         description: "Whats up! Im MeetMeLater! Ive helped with textures and other small things for the server! Ive had an absolute blast helping out with this project and am super exited to eventually see it in game and enjoy it with everyone! The team has been amazing to work with, and im hoping that the continued work we put into the server makes people enjoy it even more! "
     },
     {
-        value: 16,
+        value: 14,
         color: "Yellow",
         name: "Vlusky",
         role: "Sounds Team",
@@ -154,7 +136,7 @@ const Members = [
         description: "Heyo. I'm Vlusky (to avoid confusion, it's pronounced like \"Husky\"). And I'm a music artist that also draws stuff. I worked on the soundtrack and sound effects for this project. It's nice to have my work on here! I'm so glad that I got the opportunity to work on BOBSMP. It's an experience to say the least... This is my first major project that I worked on so I hope you guys enjoy it!"
     },
     {
-        value: 17,
+        value: 15,
         color: "white",
         name: "TheDiamondOnFire",
         role: "3D Modeler",
@@ -163,16 +145,7 @@ const Members = [
         description: "Hey! I'm TheDiamondOnFire and I'm a 3D artist! I've primarily worked on 3D renders for the BOB SMP website including all the renders of the staff. It's meant a lot to me having the privelege of working with the team on such a big project with so much passion behind it. Seeing everything come together was very fulfilling and satisfying and I'm happy everything's turned out so great!"
     },
     {
-        value: 18,
-        color: "yellow",
-        name: "ByteTheBaby",
-        role: "Java Developer",
-        image: "/images/skins/bytemebaby.png",
-        icon: "/images/icons/bytethebaby.png",
-        description: "Hey! I'm Byte. I work with the development team to make awesome technical features. I make sure new concepts and functionality work properly and are in match with the vision this team has!"
-    },
-    {
-        value: 19,
+        value: 16,
         color: "#67b3d1",
         name: "Khyll",
         role: "Textures & Models",
@@ -181,7 +154,7 @@ const Members = [
         description: "Heyo! I do pixel art and modeling for the team! I mainly focus on minecraft content, and I've been happy to do any tasks I've been assigned to. I make sure lots of models and mobs look perfect for production!"
     },
     {
-        value: 20,
+        value: 17,
         color: "white",
         name: "Rappelr",
         role: "Java Developer",

@@ -1,7 +1,7 @@
 .blogPreviewContainer {
     justify-self: center;
     display: flex;
-    width: 75vw;
+    width: 80vw;
     height: 30vh;
     align-items: center;
     justify-content: space-around;
@@ -18,9 +18,10 @@
 }
 
 .side {
-    min-width: 20vw;
+    min-width: 22.5vw;
     min-height: 25vh;
     background-size: cover;
+    background-position: center;
     outline: 3px solid white;
     z-index: 9;
     box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5);
@@ -29,10 +30,11 @@
 
 .center {
     box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.5);
-    min-width: 25vw;
+    min-width: 27.5vw;
     min-height: 30vh;
     z-index: 10;
     background-size: cover;
+    background-position: center;
     outline: 3px solid white;
     transition-duration: 0.3s;
 }

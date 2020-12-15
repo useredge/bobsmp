@@ -17,7 +17,7 @@ const BlogPreview = ({posts}) => {
 
           </div>
 
-            <div className="centerer" style={{height: '5vh', marginTop: '3vh'}}><Link to="/blog" className="viewBlogs">VIEW BLOGS</Link></div>
+            <div className="centerer" style={{height: '5vh', marginTop: '3vh', marginBottom: '5vh'}}><Link to="/blog" className="viewBlogs">VIEW BLOGS</Link></div>
 
           </div>
       )

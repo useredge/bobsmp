@@ -19,6 +19,7 @@ const Home = () => {
     const pageVariants = {
         visible: {
           opacity: 1,
+          background: 'url("/images/bricks.jpg")',
           transition: {
             when: "beforeChildren",
             duration: 0.5,
@@ -28,6 +29,7 @@ const Home = () => {
         },
         hidden: {
           opacity: 0,
+          background: 'url("/images/bricks.jpg")',
           transition: {
             when: "afterChildren",
             duration: 0.25,
@@ -38,12 +40,12 @@ const Home = () => {
 
       const blogVariants = {
         visible: {
-          background: 'linear-gradient(to top, #e5b754 100%, rgba(229, 183, 82, 0) 0%)',
-          transition: {type: "easeInOut", duration: 1}
+          background: 'linear-gradient(to top, #e5b754 0%, rgba(229, 183, 82, 0) 0%)',
+          transition: {type: "easeInOut", duration: 0.75}
         },
         hidden: {
-          background: 'linear-gradient(to top, #e5b754 40%, rgba(229, 183, 82, 0) 0%)',
-          transition: {type: "easeInOut", duration: 1}
+          background: 'linear-gradient(to top, #e5b754 45%, rgba(229, 183, 82, 0) 0%)',
+          transition: {type: "easeInOut", duration: 0.75}
         }
       }
 
@@ -85,7 +87,6 @@ const Home = () => {
         initial="hidden"
         animate="visible"
         exit="hidden"
-        style={{background: 'url("/images/bricks.jpg")'}}
       >
           <Header link="/images/newBg.jpg" position='center'/>
           <Navbar/>
@@ -100,7 +101,7 @@ const Home = () => {
           >
           <BlogPreview posts={articles}/>
           </motion.div>
-          <VisibilitySensor partialVisibility={false} onChange={onChange}>
+          <VisibilitySensor partialVisibility={true} onChange={onChange}>
           <Footer />
           </VisibilitySensor>
       </motion.div>

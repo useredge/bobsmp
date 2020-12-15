@@ -7,7 +7,7 @@
     justify-content: center;
     flex-wrap: wrap;
     color: white;
-    font-family: ProximaNova;
+    font-family: 'Montserrat', sans-serif;
     font-size: 18px;
     line-height: 200%;
 }
@@ -41,6 +41,15 @@
     margin-bottom: 4%;
 }
 
+.blogPost h2 img {
+    transform: translateY(3px);
+}
+
+.blogPost blockquote {
+    border-left: 3px solid gray;
+    padding-left: 20px;
+}
+
 .statusPink {
     color: #db57de
 }
@@ -60,7 +69,7 @@
 .articleTitle {
     margin-top: 5vh;
     color: white;
-    font-size: 2rem;
+    font-size: 2vw;
 }
 
 .backToBlog, .backToBlog:visited {
@@ -86,13 +95,15 @@
 }
 
 .articleTitle {
-    font-family: ProximaNovaBold, sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
 }
 
 .articleContent {
-    font-family: ProximaNova, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     color: lightgray;
     margin-top: 5vh;
+    font-size: 1vw;
 }
 
 @media only screen and (max-width: 768px) {
