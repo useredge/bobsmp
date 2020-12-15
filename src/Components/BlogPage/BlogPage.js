@@ -86,7 +86,7 @@ const BlogPage = () => {
                     animate="visible"
                     exit="hidden"
                   >
-
+            <Header link={image}/>
             <Navbar />
               <div className="centerer">
                 <div className="blogPost">
