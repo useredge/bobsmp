@@ -5,6 +5,7 @@
     height: 30vh;
     align-items: center;
     justify-content: space-around;
+    align-self: center;
 }
 
 .blogSub {

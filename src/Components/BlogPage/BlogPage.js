@@ -1,8 +1,7 @@
-import React, {Component, useEffect, useState} from 'react'
+import {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import client from '../client'
 import Navbar from '../Navbar/Navbar'
-import Header from "../Header/Header";
 import Footer from "../Footer/Footer"
 import ReactMarkdown, {astPlugins} from 'react-markdown'
 import { motion } from 'framer-motion'
@@ -12,27 +11,24 @@ const BlogPage = () => {
 
     const [article, setArticle] = useState({});
     const [image, setImage] = useState("");
-    const [content, setContent] = useState();
+    const [isLoading, setIsLoading] = useState(true);
     const url = window.location.pathname;
     const location = url.substring(url.lastIndexOf('/') + 1);
     const formattedDate = new Date(article.date).toDateString();
 
 
     const fetchData = async() => {
-      try {
+
+        setIsLoading(true);
+
         const resp = await client.getEntries({
             content_type: 'blog',
             'fields.path': location
           })
         setArticle(resp.items[0].fields);
         setImage(resp.items[0].fields.thumbnail.fields.file.url)
-        setContent(resp.items[0].fields.content)
-        
-      } catch (error) {
-        console.log(error);
-      }
-      
-    }
+        setIsLoading(false);
+      } 
 
     useEffect(() => {
         fetchData();
@@ -75,13 +71,17 @@ const BlogPage = () => {
         },
       }
 
-        return (
-          <motion.div
-        variants={list}
-        initial="hidden"
-        animate="visible"
-        exit="hidden"
-      >
+        if (isLoading) {
+          return 'Loading...'
+        }
+        else {
+          return <motion.div
+                    variants={list}
+                    initial="hidden"
+                    animate="visible"
+                    exit="hidden"
+                  >
+
             <Navbar />
               <div className="centerer">
                 <div className="blogPost">
@@ -104,7 +104,7 @@ const BlogPage = () => {
               </div>
               <Footer/>
             </motion.div>
-        )
+        }
 
 }
 

@@ -11,6 +11,17 @@
     margin-bottom: 5%;
 }
 
+.swiper-container {
+    width: 70vw;
+    height: 50vh;
+    margin-bottom: 3vh;
+}
+
+.slide {
+    background-position: center;
+    background-size: cover;
+}
+
 @media only screen and (max-width: 768px) {
 
 .blogGridContainer {

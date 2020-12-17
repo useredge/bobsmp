@@ -27,7 +27,8 @@
     "react-scripts": "^4.0.0",
     "react-text-transition": "^1.1.2",
     "react-transition-group": "^4.4.1",
-    "react-visibility-sensor": "^5.1.1"
+    "react-visibility-sensor": "^5.1.1",
+    "swiper": "^6.4.1"
   },
   "scripts": {
     "start": "react-scripts start",

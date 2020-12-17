@@ -3,9 +3,13 @@ import Header from "../Header/Header";
 import Navbar from "../Navbar/Navbar";
 import './Blog.css';
 import client from '../client'
-import BlogItems from '../BlogItems/BlogItems'
+import BlogItem from '../BlogItem/BlogItem'
 import Footer from "../Footer/Footer"
 import { motion } from 'framer-motion'
+import { Swiper, SwiperSlide } from 'swiper/react'
+import SwiperCore from 'swiper'
+import 'swiper/swiper-bundle.css'
+import {Link} from 'react-router-dom'
 
 const Blog = () => {
   
@@ -16,14 +20,8 @@ const Blog = () => {
   }, []);
   
   const fetchData = async() => {
-    try {
       const resp = await client.getEntries();
       setArticles(resp.items);
-
-    } catch (error) {
-      console.log(error);
-    }
-    
   }
   
   const list = {
@@ -46,17 +44,27 @@ const Blog = () => {
     },
   }
 
+  const slides = articles.slice(0, 3).map((article, index) => <SwiperSlide tag={Link} to={"blog/" + article.fields.path} key={index}><img src={article.fields.thumbnail.fields.file.url} className="slide"/></SwiperSlide>)
+
+  if (articles.length === 0) return <h1 style={{fontSize: '100px', color: 'transparent', width: '100%', textAlign: 'center', fontFamily: 'MCTen'}}>Loading...</h1>
+
   return (
       <motion.div
         variants={list}
         initial="hidden"
         animate="visible"
         exit="hidden"
+        style={{backgroundColor: '#190f1d'}}
       >
       <Navbar />
         <div className="centerer">
-          <div className="blogGridContainer">
-            <BlogItems posts={articles}/>
+          <div className="carousel">
+          <Swiper 
+            id="main"
+            spaceBetweenSlides={0}
+            >
+            {slides}
+          </Swiper>
           </div>
         </div>
         <Footer/>
