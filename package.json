@@ -13,6 +13,7 @@
     "history": "^5.0.0",
     "jquery": "^3.5.1",
     "marked": "^1.2.2",
+    "node-sass": "^4.14.1",
     "react": "^16.14.0",
     "react-animated-css": "^1.2.1",
     "react-animation": "^1.2.2",
