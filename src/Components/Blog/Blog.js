@@ -1,10 +1,10 @@
-import {useEffect, useState} from "react";
+import {useEffect, useState, useRef} from "react";
 import Navbar from "../Navbar/Navbar";
 import './Blog.css';
 import client from '../client'
 import BlogItem from '../BlogItem/BlogItem'
 import Footer from "../Footer/Footer"
-import { animate, motion, useAnimation } from 'framer-motion'
+import { motion, useAnimation } from 'framer-motion'
 import { AnimateOnChange } from 'react-animation'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, {Navigation, EffectCoverflow} from 'swiper'
@@ -62,13 +62,13 @@ const Blog = () => {
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.3,
+        duration: 1
       },
     },
     hidden: {
       opacity: 0,
       transition: {
-        duration: 0.3,
+        duration: 1
       },
     },
   }
@@ -97,19 +97,12 @@ const Blog = () => {
 
   const indexOfLastPost = currentPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const maxPages = Math.ceil(articles.length / postsPerPage);
   const currentPosts = articles.slice(indexOfFirstPost, indexOfLastPost);
 
   const paginate = pageNumber => {setCurrentPage(pageNumber)}
 
-  const controls = useAnimation();
-
-      const animateIn = () => {
-        controls.start("visible");
-      }
-
-      const animateOut = () => {
-        controls.start("hidden")
-      }
+  const scrollRef = useRef();
 
   if (isLoading) return 'Loading...'
   
@@ -168,17 +161,24 @@ const Blog = () => {
             </AnimateOnChange>
             </div>
 
-          <motion.div 
-            className="blogGridContainer"
-            animate={controls}
-            variants={paginationTransition}
-            initial="visible"
-            >
-            {currentPosts.map((article, index) => <BlogItem article={article}/>)}
-          </motion.div>
+          <div className="centerer" ref={scrollRef}>
+            <AnimateOnChange 
+            animationIn="fadeIn"
+            animationOut="fadeOut"
+            durationOut={5000}
+            style={{
+              width: '85vw',
+              display: 'flex',
+              justifyContent: 'space-evenly',
+              flexWrap: 'wrap',
+              marginBottom: '5vh'
+            }}>
+              {currentPosts.map((article) => <BlogItem article={article}/>)}
+            </AnimateOnChange>
+          </div>
 
-          <div className="centerer">
-            <Pagination postsPerPage={postsPerPage} totalPosts={articles.length} paginate={paginate} animateIn={animateIn} animateOut={animateOut}/>
+          <div onClick={() => scrollRef.current.scrollIntoView({behavior: 'smooth', duration: 0.3})} className="centerer">
+            <Pagination postsPerPage={postsPerPage} totalPosts={articles.length} paginate={paginate} currentPage={currentPage} maxPages={maxPages}/>
           </div>
 
         <Footer/>
