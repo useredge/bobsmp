@@ -1,8 +1,8 @@
 .blogItemContainer {
     margin-top: 5%;
-    width: 30vw;
+    width: 32.5vw;
     color:white;
-    font-family: ProximaNovaBold, sans-serif;
+    font-family: MCTen, sans-serif;
     display: flex;
     flex-direction: column;
     transition: all 0.2s;
@@ -10,26 +10,26 @@
 }
 
 .blogItemThumbnail {
-    width: 30vw;    
+    width: 32.5vw;    
     height: auto;
-    outline: 1px solid white;
+    outline: 3px solid white;
     transition: ease-in-out 0.2s;
 }
 
 .blogItemThumbnail:hover {
-    outline: 1px solid yellow;
+    outline: 3px solid yellow;
     transition: ease-in-out 0.2s;
     filter: brightness(90%)
 }
 
 .bFlex {
-    font-family: ProximaNova, sans-serif;
+    font-family: Minecraftia, sans-serif;
     display: flex;
     width: 100%;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    padding-top: 2%;    
+    padding: 2% 0% 5% 0%;   
 }
 
 .blogItemContainer:hover {

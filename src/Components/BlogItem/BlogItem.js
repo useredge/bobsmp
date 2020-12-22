@@ -28,13 +28,13 @@ const BlogItem = ({ article }) => {
     return (
         <Link to={{pathname: '/blog/' + path, state: {article: article}}} style={{ textDecoration: 'none', color: 'white' }} className="blogItemContainer">
             {thumbnail && <img className="blogItemThumbnail" src={thumbnail.fields.file.url} alt={title} title={title}/> }
-            <h2 style={{paddingTop: '3%', paddingBottom: '3%'}}>{title}</h2>
+            <p style={{paddingTop: '5%', paddingBottom: '3%', fontSize: '2vw'}}>{title}</p>
             <div className="bFlex">
                 <h3 className={style}>{status}</h3>
                 &nbsp; - &nbsp;
                 <h4>{formattedDate.slice(4)}</h4>
             </div>
-            <section dangerouslySetInnerHTML={{ __html: postDescription}} style={{fontFamily: 'ProximaNova', fontSize: '18px'}} />
+            <section dangerouslySetInnerHTML={{ __html: postDescription}} style={{fontFamily: 'Minecraftia', fontSize: '18px'}} />
         </Link>
     )
 }

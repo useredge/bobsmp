@@ -1,7 +1,7 @@
 .blogGridContainer {
-    font-family: ProximaNovaBold, sans-serif;
     display: flex;
-    width: 100vw;
+    width: 85vw;
+    height: auto;
     justify-content: space-evenly;
     justify-self: center;
     flex-wrap: wrap;
@@ -9,11 +9,12 @@
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
+    transition-duration: 0.3s;
 }
 
 .swiper-container {
-    width: 80vw;
-    height: 40vh;
+    width: 100vw;
+    height: 45vh;
     padding-top: 100px;
     padding-bottom: 100px;
     margin-bottom: 50px;
@@ -26,6 +27,13 @@
     width: 300px;
     height: 100%;
     border: 3px solid white;
+    transition-duration: 0.3s;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+}
+
+.swiper-slide:hover {
+    border: 3px solid yellow;
+    transition-duration: 0.3s;
 }
 
 .updates {
@@ -58,6 +66,18 @@
     color: white;
     font-size: 1vw;
     font-family: MCTen, sans-serif;
+}
+
+.articleDescription {
+    font-family: Minecraftia, sans-serif;
+    color: white;
+    font-size: 1vw;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15vh;
 }
 
 @media only screen and (max-width: 768px) {

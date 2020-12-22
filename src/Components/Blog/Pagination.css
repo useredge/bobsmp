@@ -1,0 +1,36 @@
+.pageNavbar {
+    background-color: #c366e8;
+    color: white;
+    width: 30%;
+    border-bottom: 5px solid #6a397d;
+    margin-bottom: 5vh;
+}
+
+.pageNumber {
+    padding: 1vw 1vw 0.7vw 1vw;
+    font-family: MCTen, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 3vw;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.pageNumber:hover {
+    background-color: #aa5dc9;
+    transition-duration: 0.3s;
+}
+
+.arrow {
+    width: 4.5vw;
+    height: auto;
+    cursor: pointer;
+}
+
+.invertedArrow {
+    width: 4.5vw;
+    height: auto;
+    transform: scale(-1);
+    cursor: pointer;
+}

@@ -4,7 +4,7 @@ import './Blog.css';
 import client from '../client'
 import BlogItem from '../BlogItem/BlogItem'
 import Footer from "../Footer/Footer"
-import { motion } from 'framer-motion'
+import { animate, motion, useAnimation } from 'framer-motion'
 import { AnimateOnChange } from 'react-animation'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import SwiperCore, {Navigation, EffectCoverflow} from 'swiper'
@@ -12,6 +12,7 @@ import 'swiper/swiper.scss'
 import 'swiper/components/navigation/navigation.scss'
 import 'swiper/components/effect-coverflow/effect-coverflow.scss'
 import {Link} from 'react-router-dom'
+import Pagination from './Pagination'
 
 const Blog = () => {
 
@@ -20,6 +21,7 @@ const Blog = () => {
   const [articles, setArticles] = useState([]);
   const [current, setCurrent] = useState({});
   const [isLoading, setIsLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState(1);
   
   useEffect(() => {
     fetchData();
@@ -36,7 +38,7 @@ const Blog = () => {
       setIsLoading(false)
   }
   
-  const list = {
+  const pageTransition = {
     visible: {
       opacity: 1,
       transition: {
@@ -52,6 +54,21 @@ const Blog = () => {
         when: "afterChildren",
         delayChildren: 2,
         duration: 0.25,
+      },
+    },
+  }
+
+  const paginationTransition = {
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.3,
+      },
+    },
+    hidden: {
+      opacity: 0,
+      transition: {
+        duration: 0.3,
       },
     },
   }
@@ -74,11 +91,31 @@ const Blog = () => {
   swapPositions(slides, 2, 0);
   swapPositions(slides, 1, 2);
 
+  //pagination logic
+
+  const postsPerPage = 4;
+
+  const indexOfLastPost = currentPage * postsPerPage;
+  const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  const currentPosts = articles.slice(indexOfFirstPost, indexOfLastPost);
+
+  const paginate = pageNumber => {setCurrentPage(pageNumber)}
+
+  const controls = useAnimation();
+
+      const animateIn = () => {
+        controls.start("visible");
+      }
+
+      const animateOut = () => {
+        controls.start("hidden")
+      }
+
   if (isLoading) return 'Loading...'
   
   return (
       <motion.div
-        variants={list}
+        variants={pageTransition}
         initial="hidden"
         animate="visible"
         exit="hidden"
@@ -110,7 +147,7 @@ const Blog = () => {
             effect="coverflow"
             loop={false}
             grabCursor={true}
-            coverflowEffect={{rotate: 20, depth: 1000, slideShadows: true}}
+            coverflowEffect={{rotate: 20, depth: 1250, slideShadows: true}}
             centeredSlides={true}
             spaceBetween={-200}
             slidesPerView={3}
@@ -120,6 +157,29 @@ const Blog = () => {
             >
             {slides}
           </Swiper>
+
+            <div className="centerer">
+              <AnimateOnChange
+            animationIn="fadeIn"
+            animationOut="fadeOut"
+            durationOut={1000}
+            className="articleDescription">
+              {current.fields.description}
+            </AnimateOnChange>
+            </div>
+
+          <motion.div 
+            className="blogGridContainer"
+            animate={controls}
+            variants={paginationTransition}
+            initial="visible"
+            >
+            {currentPosts.map((article, index) => <BlogItem article={article}/>)}
+          </motion.div>
+
+          <div className="centerer">
+            <Pagination postsPerPage={postsPerPage} totalPosts={articles.length} paginate={paginate} animateIn={animateIn} animateOut={animateOut}/>
+          </div>
 
         <Footer/>
     </motion.div>
