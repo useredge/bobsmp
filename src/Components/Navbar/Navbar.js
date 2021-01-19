@@ -27,8 +27,9 @@ const Navbar = () => {
         break;
         case '/shop' :
             defColor = '#ff4545'
-        break;
     }
+
+    if (location.includes('/blog/')) defColor = '#e18fff'
 
     useEffect(() => {
         setColor(defColor)
@@ -67,6 +68,7 @@ const Navbar = () => {
                     </Link>
                     <a href="https://shop.bobssmp.com/" style={{ textDecoration: 'none', color: 'white' }}>
                         <li 
+                        style={{ backgroundColor: '#ff4545'}}
                         className="shop"
                         onMouseEnter={() => {setColor('#ff4545')}}
                         onMouseLeave={() => {setColor(defColor)}}><img src="/images/Pixel Icons/basket.png" className="navIcon"/><p className="navTitle">SHOP</p></li>

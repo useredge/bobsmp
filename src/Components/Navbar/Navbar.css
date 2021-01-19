@@ -7,28 +7,25 @@
     text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
     transition: all 0.15s;
     margin: 2vh 0vh 2vh 0vh;
+    outline: 1px solid black;
 }
 
 .home {
-    outline: 1px solid black;
     background-color: #28daff;
     border-bottom: 4px solid #389fc6;
 }
 
 .news {
-    outline: 1px solid black;
     background-color: #e18fff;
     border-bottom: 4px solid #c57ddf;
 }
 
 .help {
-    outline: 1px solid black;
     background-color: #9cff8f;
     border-bottom: 4px solid #7dcc72;
 }
 
 .shop {
-    outline: 1px solid black;
     background-color: #ff4545;
     border-bottom: 4px solid #df3c3c;
 }
@@ -98,13 +95,32 @@ ul {
 }
 
 @media only screen and (max-width: 768px) {
-
+    
 .fa-bars {
     opacity: 1;
 }
 
 .fa-times {
     opacity: 1;
+}
+
+.navIcon {
+    width: 8vw;
+    height: auto;
+    margin-right: 0.5vw;
+    filter: drop-shadow(0 4px 0px rgba(0,0,0,0.3));
+}
+
+.navTitle {
+    font-size: 8vw;
+    transform: translateY(0.5vh);
+}
+
+.shop {
+    outline: 1px solid black;
+    background-color: #ff4545;
+    border-bottom: 4px solid #df3c3c;
+    z-index: 20;
 }
 
 .hamburger {
@@ -126,15 +142,14 @@ ul {
     text-shadow: 0px 3px 0px rgba(0, 0, 0, 0.3);
     transition: all 0.15s;
     outline-offset: -1px;
-    outline: 1px solid rgba(0, 0, 0, 0);
+    outline: 1px solid black;
 }
 
 nav {
     transform: translateY(20px);
-    font-family: ProximaNovaBold, sans-serif;
+    font-family: MCTen, sans-serif;
     width: 100%;
-    height: 40%;
-    font-size: 1.5em;
+    height: 50%;
     letter-spacing: 2px;
     display: flex;
     flex-direction: column;
@@ -145,12 +160,12 @@ nav {
 
 .navContainer {
     z-index: 100;
-    box-shadow: 0px 0px 40px 50px rgba(0,0,0,0.85);
+    box-shadow: 0px 0px 40px 50px rgba(0,0,0,0.65);
     position: relative;
     float: left;
     margin: 0;
     width: 100vw;
-    height: 35vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -159,7 +174,7 @@ nav {
 
 ul {
     text-align: center;
-    width: 100%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -176,12 +191,6 @@ ul {
 .visible {
     opacity: 1;
     transition-duration: 0.3s;
-}
-
-.shop {
-    background-color: rgba(0, 0, 0, 0);
-    outline: 0px solid rgb(255, 136, 0);
-    outline-offset: -1px;
 }
 
 }

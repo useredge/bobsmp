@@ -21,7 +21,7 @@
 }
 
 .logoContainer {
-    transform: translateY(-5vh);
+    transform: translateY(-15vh);
     width: 100vw;
     height: auto;
     display: flex;

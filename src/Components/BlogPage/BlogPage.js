@@ -80,6 +80,7 @@ const BlogPage = () => {
                     initial="hidden"
                     animate="visible"
                     exit="hidden"
+                    style={{backgroundColor: '#190f1d'}}
                   >
 
             <Navbar />

@@ -16,3 +16,21 @@
     filter: brightness(50%);
     transition-duration: 2s
 }
+
+@media only screen and (max-width: 1080px) {
+
+.bg {
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    height: 100vh;
+    z-index: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    transform: translateY(0vh);
+    transition-duration: 2s;
+}
+
+}

@@ -34,7 +34,6 @@ const Help = () => {
         animate="visible"
         exit="hidden"
         >
-            <Header link="/images/helpbg.jpg"/>
             <Navbar />
                 <div className="centerer">
                   <div className="helpContainer">
