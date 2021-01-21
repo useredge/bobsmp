@@ -33,7 +33,7 @@ const Team = () => {
                 <p className="meet"><img src="/images/Pixel Icons/users.png" className="users"/> Meet the Team!</p>
                 <p className="subtitle">These are the volunteers who helped make this possible!</p>
             </div>
-                <div className="centerer" style={{backgroundColor: '#070617'}}>
+                <div className="centerer arrowsDiv">
                     <div className="selectDesktop">
                         <i class="fas fa-arrow-left arrowsDesktop" onClick={() => {
                             if(which === 0) {
@@ -77,7 +77,7 @@ const Team = () => {
                             animationOut="fadeOut"
                             durationOut={1000}
                         >
-                        <h2 className="personName" style={{color: Members[which].color}}>&#8291;	&#8291;	&#8291;{Members[which].name} - {Members[which].role}</h2>
+                        <p className="personName" style={{color: Members[which].color}}>&#8291;	&#8291;	&#8291;{Members[which].name} - {Members[which].role}</p>
                         <p className="personDescription">{Members[which].description}</p>
                         </AnimateOnChange>
                     </div>
@@ -93,7 +93,7 @@ const Team = () => {
                                     <img src={Members[which].image} alt="Skin" className="skin"/>
                                 </HideUntilLoaded>
                             </AnimateOnChange>
-                            <div className="mobileArrows">
+                            <div className="mobileArrows arrowsDiv">
                         <i class="fas fa-arrow-left arrowsMobile" style={{marginLeft: '3vw'}} onClick={() => {
                             if(which === 0) {
                                 setWhich(Members.length - 1)

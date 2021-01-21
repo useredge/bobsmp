@@ -76,13 +76,49 @@
 @media only screen and (max-width: 768px) {
 
 .side {        
-    min-width: 17.5vw;
+    min-width: 65vw;
     min-height: 20vh;
+    margin: 20px;
 }
 
 .center {
-    min-width: 22.5vw;
+    min-width: 75vw;
     min-height: 25vh;
+    margin: 20px;
+}
+
+.viewBlogs {
+    text-shadow: 0px 5px 0px rgba(0, 0, 0, 0.3);
+    font-size: 8vw;
+    font-family: MCTen, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 1.5vh 3vw 0.5vh 3vw;
+    background-color: #c720e1;
+    border-bottom: 1vh solid #9e1ab4;
+    margin-top: 3vh;
+    transition-duration: 0.3s;
+}
+
+.blogSub {
+    color:white;
+    font-family: Minecraftia, sans-serif;
+    width: 100%;
+    font-size: 4vw;
+    text-align: center;
+    margin-bottom: 3vh;
+    font-weight: lighter;
+}
+
+.blogPreviewContainer {
+    justify-self: center;
+    display: flex;
+    width: 80vw;
+    height: auto;
+    align-items: center;
+    justify-content: space-around;
+    align-self: center;
+    flex-direction: column;
 }
 
 }

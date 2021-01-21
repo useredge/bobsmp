@@ -82,18 +82,84 @@
 @media only screen and (max-width: 768px) {
 
 .blogGridContainer {
-    transform: translateY(-25vh);
-    font-family: ProximaNovaBold, sans-serif;
-    width: 100vw;
     display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
-    justify-self: center;
+    width: 85vw;
+    height: auto;
+    justify-content: space-evenly;
     flex-wrap: wrap;
     color: white;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 5%;
+    transition-duration: 0.3s;
+}
+
+.swiper-container {
+    width: 100vw;
+    height: 45vh;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 300px;
+    height: 100%;
+    border: 3px solid white;
+    transition-duration: 0.3s;
+    box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.5);
+}
+
+.swiper-slide:hover {
+    border: 3px solid yellow;
+    transition-duration: 0.3s;
+}
+
+.updates {
+    font-family: MCTen, sans-serif;
+    font-size: 2vw;
+    margin-bottom: 2vh;
+    margin-top: 5vh;
+    color: white;
+}
+
+.blogHeader {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.selectedArticle {
+    font-size: 3vw;
+    color: white;
+    font-family: MCTen, sans-serif;
+}
+
+.statusDate {
+    align-self: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    font-size: 1vw;
+    font-family: MCTen, sans-serif;
+}
+
+.articleDescription {
+    font-family: Minecraftia, sans-serif;
+    color: white;
+    font-size: 1vw;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 15vh;
 }
 
 }

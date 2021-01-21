@@ -89,31 +89,89 @@
 @media only screen and (max-width: 768px) {
 
 .footer {
-    margin-top: 5vh;
-    padding: 1em;
-    font-family: ProximaNovaBold, sans-serif;
+    padding: 1vh;
+    font-family: MCTen, sans-serif;
     z-index: 20;
     width: 100vw;
-    background-color: #FF8F00;
-    min-height: 10vw;
+    background-color: #e5b754;
+    display: flex;
+    justify-content: center;
+}
+
+.flex {
+    margin-top: 5vh;
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    color: #533500;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .footerButton {
-    display: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-self: left;
+    align-items: center;
+    transition-duration: 0.5s;
+    margin-bottom: 2vh;
+}
+
+.fIp {
+    background-color: #d99724;
+    color: #e5b054;
+    padding: 2vh 1vw 1vh 1vw;
+    font-size: 8vw;
+    transition-duration: 0.3s;
 }
 
 .socials {
     cursor: pointer;
     display: flex;
     flex-direction: row;
-    justify-self: center;
-    font-size: 1.5em;
+    justify-self: right;
+    font-size: 6vw;
 }
 
-.flex {
-    color: #533500;
+.socials i {
+    padding: 20px;
+    transition-duration: 0.5s;
+}
+
+.socials a {
+    color: #c69848;
+}
+
+.socials a:visited {
+    color: #c69848;
+}
+
+.socials i:hover {
+    color: #9e7939;
+    transition-duration: 0.5s;
+}
+
+.fIp:hover {
+    background-color: #ac771c;
+    transition-duration: 0.3s;
+}
+
+.copy {
+    font-family: Minecraftia, sans-serif;
+    color: #d99724;
+    padding: 1vh;
+}
+
+.socialWrapper {
+    font-size: 6vw;
+    color: #c69848;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
