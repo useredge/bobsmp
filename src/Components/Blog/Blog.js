@@ -4,10 +4,10 @@ import './Blog.css';
 import client from '../client'
 import BlogItem from '../BlogItem/BlogItem'
 import Footer from "../Footer/Footer"
-import { motion, useAnimation } from 'framer-motion'
+import { motion } from 'framer-motion'
 import { AnimateOnChange } from 'react-animation'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import SwiperCore, {Navigation, EffectCoverflow} from 'swiper'
+import SwiperCore, {EffectCoverflow} from 'swiper'
 import 'swiper/swiper.scss'
 import 'swiper/components/navigation/navigation.scss'
 import 'swiper/components/effect-coverflow/effect-coverflow.scss'
@@ -89,6 +89,10 @@ const Blog = () => {
 
   const scrollRef = useRef();
 
+  let mobileView = false;
+  if(window.innerWidth <= 1080) {mobileView = true}
+  else {mobileView = false}
+
   if (isLoading) return 'Loading...'
   
   return (
@@ -125,12 +129,13 @@ const Blog = () => {
             effect="coverflow"
             loop={false}
             grabCursor={true}
-            coverflowEffect={{rotate: 20, depth: 1250, slideShadows: true}}
+            coverflowEffect={{rotate: 20, depth: mobileView ? 2000 : 1250, slideShadows: true}}
             centeredSlides={true}
-            spaceBetween={-200}
+            spaceBetween={mobileView ? -100 : -200}
             slidesPerView={3}
             initialSlide={1}
             preloadImages={true}
+            direction={mobileView ? 'vertical' : 'horizontal'}
             onSlideChange={(swiper) => {setCurrent(articles[swiper.realIndex])}}
             >
             {slides}
@@ -156,7 +161,6 @@ const Blog = () => {
               display: 'flex',
               justifyContent: 'space-evenly',
               flexWrap: 'wrap',
-              marginBottom: '5vh'
             }}>
               {currentPosts.map((article) => <BlogItem article={article}/>)}
             </AnimateOnChange>
