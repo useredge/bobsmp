@@ -20,7 +20,7 @@ const Pagination = ({postsPerPage, totalPosts, paginate, currentPage, maxPages})
     return (
         <nav className="pageNavbar">
 
-            <ul>
+            <ul className="itemList">
                 <li style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}} onClick={() => {
                     if (currentPage <= 1) {
                         paginate(1)

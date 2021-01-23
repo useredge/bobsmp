@@ -56,3 +56,72 @@
     opacity: 0.3;
     transition-duration: 0.3s;
 }
+
+@media only screen and (max-width: 768px) {
+
+.pageNavbar {
+    transform: translateY(-50vh);
+    background-color: #c366e8;
+    color: white;
+    border-bottom: 5px solid #6a397d;
+    width: 70vw;
+    display: flex;
+}
+
+.pageNumber {
+    padding: 2vw 3vw 1vw 3vw;
+    font-family: MCTen, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 8vw;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    transition-duration: 0.3s;
+    justify-self: center;
+    align-self: center;
+}
+
+.pageNumber:hover {
+    background-color: #aa5dc9;
+    transition-duration: 0.3s;
+}
+
+.arrow:hover {
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+    transition-duration: 0.3s;
+}
+
+.invertedArrow:hover {
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.5));
+    transition-duration: 0.3s;
+}
+
+.arrow {
+    width: 8vw;
+    height: auto;
+    cursor: pointer;
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+    transition-duration: 0.3s;
+}
+
+.invertedArrow {
+    width: 8vw;
+    height: auto;
+    transform: scale(-1);
+    filter: drop-shadow(0px 0px 10px rgba(0, 0, 0, 0.5));
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
+.inactive {
+    opacity: 0.3;
+    transition-duration: 0.3s;
+}
+
+.itemList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+}

@@ -161,6 +161,7 @@ const Blog = () => {
               display: 'flex',
               justifyContent: 'space-evenly',
               flexWrap: 'wrap',
+              marginBottom: '5vh'
             }}>
               {currentPosts.map((article) => <BlogItem article={article}/>)}
             </AnimateOnChange>

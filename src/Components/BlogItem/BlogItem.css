@@ -36,6 +36,17 @@
     transition: all 0.2s;
 }
 
+.itemTitle {
+    font-size: 2vw;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.itemDescription {
+    font-size: 1vw;
+    font-family: Minecraftia, sans-serif;
+}
+
 @media only screen and (max-width: 768px) {
 
 .blogItemContainer {
@@ -50,10 +61,21 @@
 }
 
 .blogItemThumbnail {
-    width: 90vw;    
+    width: 90vw;
     height: auto;
     outline: 1px solid white;
     transition: ease-in-out 0.2s;
+}
+
+.itemTitle {
+    font-size: 8vw;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.itemDescription {
+    font-size: 4vw;
+    font-family: Minecraftia, sans-serif;
 }
 
 }
