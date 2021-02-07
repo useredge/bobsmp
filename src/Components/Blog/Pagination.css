@@ -57,6 +57,12 @@
     transition-duration: 0.3s;
 }
 
+.itemList {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 @media only screen and (max-width: 768px) {
 
 .pageNavbar {
@@ -119,6 +125,7 @@
 }
 
 .itemList {
+    width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
